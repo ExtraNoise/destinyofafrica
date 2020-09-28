@@ -5,9 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Destiny of Africa</title>
+	<style>
+		#container-map {
+			position: relative;
+		}
+	</style>
 </head>
 <body>
-	<div id="cities"></div>
+	<div id="container-map">
+		<div id="cities"></div>
+	</div>
 	<script>
 		fetch('cities.json')
 			.then(function (response) {
