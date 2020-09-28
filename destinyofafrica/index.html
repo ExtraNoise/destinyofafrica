@@ -32,9 +32,10 @@
 			display: block;
 			background-color: gray;
 			width: 200px;
-			height: 80px;
-			border-radius: 6px;
+			height: 60px;
+			border-radius: 4px;
 			position: absolute;
+			padding:10px 8px;
 		}
 	</style>
 </head>
@@ -58,7 +59,7 @@
 			for (var i = 0; i < data.length; i++) {
 				var div = document.createElement("div");
 				div.className = ('city');
-				div.style = 'top:' + data[i].yloc + '; left:' + data[i].xloc;
+				div.style = 'top:' + data[i].city + '; left:' + data[i].country;
 				div.innerHTML = data[i].city + ', ' + data[i].country;
 				mainContainer.appendChild(div);
 			}
