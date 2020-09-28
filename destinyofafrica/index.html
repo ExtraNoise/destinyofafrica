@@ -7,7 +7,7 @@
 	<title>Destiny of Africa</title>
 </head>
 <body>
-	<div id="myData"></div>
+	<div id="cities"></div>
 	<script>
 		fetch('cities.json')
 			.then(function (response) {
@@ -20,7 +20,7 @@
 				console.log('error: ' + err);
 			});
 		function appendData(data) {
-			var mainContainer = document.getElementById("myData");
+			var mainContainer = document.getElementById("cities");
 			for (var i = 0; i < data.length; i++) {
 				var div = document.createElement("div");
 				div.style = 'background-color:red; display:block; position:absolute; top:' + data[i].yloc + '; left:' + data[i].xloc; 
