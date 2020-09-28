@@ -23,7 +23,8 @@
 			var mainContainer = document.getElementById("myData");
 			for (var i = 0; i < data.length; i++) {
 				var div = document.createElement("div");
-				newNode.className = 'city';
+				div.style = ('background-color:red'); 
+				div.className = ('city');
 				div.innerHTML = data[i].city + ', ' + data[i].country;
 				mainContainer.appendChild(div);
 			}
