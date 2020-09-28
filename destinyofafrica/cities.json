@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "city": "Algiers",
+        "country": "Algeria"
+    },
+    {
+        "id": "2",
+        "city": "Oran",
+        "country": "Algeria"
+    },
+    {
+        "id": "3",
+        "city": "Tunis",
+        "country": "Tunisia"
+    }
+]
