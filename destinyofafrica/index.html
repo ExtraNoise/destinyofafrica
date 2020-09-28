@@ -6,8 +6,35 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Destiny of Africa</title>
 	<style>
+		body {
+			background-color: #1d1d1d;
+			color: #fff;
+			font-family: 'Open Sans',Arial,sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
 		#container-map {
+			display: block;
 			position: relative;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		#cities {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		.city {
+			display: block;
+			background-color: gray;
+			width: 200px;
+			height: 80px;
+			border-radius: 6px;
+			position: absolute;
 		}
 	</style>
 </head>
@@ -30,8 +57,8 @@
 			var mainContainer = document.getElementById("cities");
 			for (var i = 0; i < data.length; i++) {
 				var div = document.createElement("div");
-				div.style = 'background-color:red; display:block; position:absolute; top:' + data[i].yloc + '; left:' + data[i].xloc; 
 				div.className = ('city');
+				div.style = 'top:' + data[i].yloc + '; left:' + data[i].xloc;
 				div.innerHTML = data[i].city + ', ' + data[i].country;
 				mainContainer.appendChild(div);
 			}
