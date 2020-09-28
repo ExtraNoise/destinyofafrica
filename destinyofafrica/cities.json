@@ -1,17 +1,23 @@
 [
-    {
-        "id": "1",
-        "city": "Algiers",
-        "country": "Algeria"
-    },
-    {
-        "id": "2",
-        "city": "Oran",
-        "country": "Algeria"
-    },
-    {
-        "id": "3",
-        "city": "Tunis",
-        "country": "Tunisia"
-    }
+	{
+		"id":"1",
+		"city":"Algiers",
+		"country":"Algeria",
+		"xloc":100,
+		"yloc":100
+	},
+	{
+		"id":"2",
+		"city":"Oran",
+		"country":"Algeria",
+		"xloc":140,
+		"yloc":140
+	},
+	{
+		"id":"3",
+		"city":"Tunis",
+		"country":"Tunisia",
+		"xloc":180,
+		"yloc":180
+	}
 ]
