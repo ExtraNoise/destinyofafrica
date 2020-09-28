@@ -4,85 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Destiny of Africa</title>
+	<title>Retribution Games</title>
 	<style>
 		body {
+			background-color: #1d1d1d;
+			color: #fff;
 			font-family: 'Open Sans',Arial,sans-serif;
 			margin: 0;
 			padding: 0;
 		}
-
-		/* Map */
-		#container-map {
-			display: inline-block;
-			background-color: #1d1d1d;
-			color: #fff;
-			overflow: hidden;
-			position: relative;
-			width: 80vw;
-			height: 100vh;
-		}
-
-		#cities {
-			display: block;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-		}
-
-		.city {
-			display: block;
-			background-color: gray;
-			width: 200px;
-			border-radius: 4px;
-			position: absolute;
-			padding:10px 8px;
-		}
-
-		/* Nations */
-		#container-nations {
-			display: inline-block;
-			background-color: #242424;
-			color: #fff;
-			overflow: hidden;
-			position: relative;
-			width: 20vw;
-			height: 100vh;
-		}
 	</style>
 </head>
 <body>
-	<div id="container-map">
-		<div id="cities"></div>
-	</div>
-	<div id="container-nations">
-		<div id="nations">
-			<div class="nation">
-				Nation list goes here.
-			</div>
-		</div>
-	</div>
-	<script>
-		fetch('cities.json')
-			.then(function (response) {
-				return response.json();
-			})
-			.then(function (data) {
-				appendData(data);
-			})
-			.catch(function (err) {
-				console.log('error: ' + err);
-			});
-		function appendData(data) {
-			var mainContainer = document.getElementById("cities");
-			for (var i = 0; i < data.length; i++) {
-				var div = document.createElement("div");
-				div.className = ('city');
-				div.style = 'top:' + data[i].yloc + 'px; left:' + data[i].xloc + 'px';
-				div.innerHTML = data[i].city + ', ' + data[i].country;
-				mainContainer.appendChild(div);
-			}
-		}
-	</script>
+	<p>Hi.</p>
 </body>
 </html>
