@@ -7,17 +7,19 @@
 	<title>Destiny of Africa</title>
 	<style>
 		body {
-			background-color: #1d1d1d;
-			color: #fff;
 			font-family: 'Open Sans',Arial,sans-serif;
 			margin: 0;
 			padding: 0;
 		}
 
+		/* Map */
 		#container-map {
-			display: block;
+			display: inline-block;
+			background-color: #1d1d1d;
+			color: #fff;
+			overflow: hidden;
 			position: relative;
-			width: 100vw;
+			width: 80vw;
 			height: 100vh;
 		}
 
@@ -36,11 +38,29 @@
 			position: absolute;
 			padding:10px 8px;
 		}
+
+		/* Nations */
+		#container-nations {
+			display: inline-block;
+			background-color: #242424;
+			color: #fff;
+			overflow: hidden;
+			position: relative;
+			width: 20vw;
+			height: 100vh;
+		}
 	</style>
 </head>
 <body>
 	<div id="container-map">
 		<div id="cities"></div>
+	</div>
+	<div id="container-nations">
+		<div id="nations">
+			<div class="nation">
+				Nation list goes here.
+			</div>
+		</div>
 	</div>
 	<script>
 		fetch('cities.json')
