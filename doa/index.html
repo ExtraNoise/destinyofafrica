@@ -41,10 +41,54 @@
 			color: #fff;
 			overflow: hidden;
 			width: 20vw;
+			min-width: 380px;
 			height: 100vh;
 			position: absolute;
 			top: 0;
 			right: 0;
+		}
+
+		#header, #nations {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.logo {
+			background-image: url('images/logo_doa_small.png');
+			background-repeat: no-repeat;
+			width: 285px;
+			height: 156px;
+			margin: 40px auto 0;
+		}
+
+		.logo h1 {
+			display: none;
+		}
+
+		.about {
+			font-size: 12px;
+			text-align: justify;
+		}
+
+		.social {
+			width: 100%;
+			text-align: center;
+		}
+
+		.socialTwitter,.socialPatreon {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			border: 0;
+			outline: none;
+		}
+
+		.socialTwitter {
+			background: url('images/icon_social_twitter.png') no-repeat center center;
+		}
+
+		.socialPatreon {
+			background: url('images/icon_social_patreon.png') no-repeat center center;
 		}
 
 	</style>
@@ -70,9 +114,26 @@
 	</div>
 
 	<div id="container-nations">
+		<div id="header">
+			<div class="logo">
+				<h1>Destiny of Africa</span>
+			</div>
+			<div class="about">
+				<p>
+					Lorem ipsum words go here. This page is still under construction. Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society. Now we see the violence inherent in the system.
+				</p>
+			</div>
+			<div class="social">
+				<a href="https://twitter.com/ExtraNoise" title="Follow ExtraNoise" target="_blank" class="socialTwitter"></a>
+				<a href="https://www.patreon.com/ExtraNoise" title="Become a Patron" target="_blank" class="socialPatreon"></a>
+			</div>
+		</div>
 		<div id="nations">
 			<div class="nation">
-				Nation list goes here.
+				nation 1
+			</div>
+			<div class="nation">
+				nation 2
 			</div>
 		</div>
 	</div>
