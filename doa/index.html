@@ -171,7 +171,7 @@
 			for (var i = 0; i < data.length; i++) {
 				var div = document.createElement("div");
 				div.className = ('city');
-				div.style = 'top:' + data[i].yloc + 'px; left:' + data[i].xloc + 'px';
+				div.style = 'position:absolute; top:' + data[i].yloc + 'px; left:' + data[i].xloc + 'px';
 				div.innerHTML = data[i].city + ', ' + data[i].country;
 				mainContainer.appendChild(div);
 			}
