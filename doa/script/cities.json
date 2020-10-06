@@ -3,21 +3,21 @@
 		"id":"1",
 		"city":"Algiers",
 		"country":"Algeria",
-		"xloc":"224",
-		"yloc":"638"
+		"xloc":"1050",
+		"yloc":"106"
 	},
 	{
 		"id":"2",
 		"city":"Oran",
 		"country":"Algeria",
-		"xloc":"118",
-		"yloc":"237"
+		"xloc":"889",
+		"yloc":"161"
 	},
 	{
 		"id":"3",
-		"city":"Tunis",
-		"country":"Tunisia",
-		"xloc":"300",
-		"yloc":"180"
+		"city":"Constantine",
+		"country":"Algeria",
+		"xloc":"1241",
+		"yloc":"110"
 	}
 ]
