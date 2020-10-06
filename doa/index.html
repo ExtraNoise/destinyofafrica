@@ -156,7 +156,7 @@
 			for (var i = 0; i < data.length; i++) {
 				var div = document.createElement("div");
 				div.className = ('city');
-				div.style = 'position:absolute; top:' + data[i].yloc - 8 + 'px; left:' + data[i].xloc - 8 + 'px; background-color:rgba(255,0,0,0.4)';
+				div.style = 'position:absolute; top:' + (data[i].yloc - 8) + 'px; left:' + (data[i].xloc - 8) + 'px; background-color:rgba(255,0,0,0.4)';
 				div.innerHTML = data[i].city + ', ' + data[i].country;
 				mainContainer.appendChild(div);
 			}
