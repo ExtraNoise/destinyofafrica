@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Destiny of Africa</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<style>
 		body {
 			font-family: 'Open Sans',Arial,sans-serif;
@@ -46,6 +47,8 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			overflow-x: hidden;
+			overflow-y: scroll;
 		}
 
 		#header, #nations {
@@ -91,6 +94,41 @@
 			background: url('images/icon_social_patreon.png') no-repeat center center;
 		}
 
+		.nation {
+			display: block;
+			width: calc(100% - 30px);
+			margin-bottom: 30px;
+			padding: 10px 15px;
+			border: 3px solid #303030;
+			border-radius: 2px;
+		}
+
+		.nation h2 {
+			font-weight: 100;
+			margin: 0;
+			padding: 0;
+		}
+
+		.party {
+			display: block;
+			height: 40px;
+		}
+
+		.partyflag {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background: red;
+		}
+
+		.partyname {
+			display: inline-block;
+		}
+
+		.partyplayer {
+			display: inline-block;
+		}
+
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="script/jquery.mapbox.js"></script>
@@ -125,11 +163,75 @@
 			</div>
 		</div>
 		<div id="nations">
+			<h3>List of Nations</h3>
 			<div class="nation">
-				nation 1
+				<h2>Algeria</h2>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FIS</div>
+					<div class="partyplayer">ExtraNoise</div>
+				</div>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FLN</div>
+					<div class="partyplayer"><em>Unclaimed</em></div>
+				</div>
 			</div>
+
 			<div class="nation">
-				nation 2
+				<h2>Angola</h2>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FIS</div>
+					<div class="partyplayer">ExtraNoise</div>
+				</div>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FLN</div>
+					<div class="partyplayer"><em>Unclaimed</em></div>
+				</div>
+			</div>
+
+			<div class="nation">
+				<h2>Benin</h2>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FIS</div>
+					<div class="partyplayer">ExtraNoise</div>
+				</div>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FLN</div>
+					<div class="partyplayer"><em>Unclaimed</em></div>
+				</div>
+			</div>
+
+			<div class="nation">
+				<h2>Botwsana</h2>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FIS</div>
+					<div class="partyplayer">ExtraNoise</div>
+				</div>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FLN</div>
+					<div class="partyplayer"><em>Unclaimed</em></div>
+				</div>
+			</div>
+
+			<div class="nation">
+				<h2>Burkina Faso</h2>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FIS</div>
+					<div class="partyplayer">ExtraNoise</div>
+				</div>
+				<div class="party">
+					<div class="partyflag">flag icon</div>
+					<div class="partyname">FLN</div>
+					<div class="partyplayer"><em>Unclaimed</em></div>
+				</div>
 			</div>
 		</div>
 	</div>
