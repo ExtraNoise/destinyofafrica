@@ -1,0 +1,13 @@
+div[class^="autoHashersSprite"] {
+	background-image:url(../img/sprite_Animations.gif);
+}
+.autoHashersSprite1 { background-position:-0px -240px; }
+.autoHashersSprite2 { background-position:-48px -240px; }
+.autoHashersSprite3 { background-position:-96px -240px; }
+.autoHashersSprite4 { background-position:-144px -240px; }
+.autoHashersSprite5 { background-position:-192px -240px; }
+.autoHashersSprite6 { background-position:-240px -240px; }
+.autoHashersSprite7 { background-position:-288px -240px; }
+.autoHashersSprite8 { background-position:-336px -240px; }
+.autoHashersSprite9 { background-position:-384px -240px; }
+.autoHashersSprite10 { background-position:-432px -240px; }

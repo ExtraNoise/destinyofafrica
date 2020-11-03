@@ -1,0 +1,13 @@
+div[class^="autoDevversSprite"] {
+	background-image:url(../img/sprite_Animations.gif);
+}
+.autoDevversSprite1 { background-position:-0px -96px; }
+.autoDevversSprite2 { background-position:-48px -96px; }
+.autoDevversSprite3 { background-position:-96px -96px; }
+.autoDevversSprite4 { background-position:-144px -96px; }
+.autoDevversSprite5 { background-position:-192px -96px; }
+.autoDevversSprite6 { background-position:-240px -96px; }
+.autoDevversSprite7 { background-position:-288px -96px; }
+.autoDevversSprite8 { background-position:-336px -96px; }
+.autoDevversSprite9 { background-position:-384px -96px; }
+.autoDevversSprite10 { background-position:-432px -96px; }

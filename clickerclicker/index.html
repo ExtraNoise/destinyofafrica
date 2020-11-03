@@ -1,0 +1,1232 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Clicker Clicker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/overlord.css">
+        <link rel="stylesheet" href="css/socials.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script src="js/clickdis.js"></script>
+
+        <!-- WHAT ARE YOU DOING HERE! GO AWAY! -->
+
+    </head>
+    <body>
+
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div id="containerLeft">
+    <div id="newsFeed">
+        <div class="socialFacebook active">
+            <div class="socialFacebookProfile">
+                <div class="socialFacebookImage"></div>
+                <div class="socialFacebookHeadline">
+                    <div class="socialFacebookName">Rick Pierce</div>
+                    <div class="socialFacebookTime">2 hrs &middot; <div class="socialFacebookFriends"></div></div>
+                </div>
+                <div class="socialFacebookDropdown"></div>
+                <div class="clear"></div>
+            </div>
+            <p>
+                I think the object is to click the terminal as many times as you can...
+            </p>
+            <p>
+                <em>#ClickerClicker</em>
+            </p>
+        </div>
+    </div>
+
+    <div id="terminal"></div>
+    <div id="terminalLight" class="hidden"></div>
+    <div id="terminalLightRev" class="hidden"></div>
+
+    <div id="clickBar">
+        <p class="clickBarTotal">
+            <span id="total_clicks">0</span><br>Clicks
+        </p>
+        <p class="clickBarPerSec">
+            Generating <span id="totalClickers">0.0</span> clicks per second!
+        </p>
+    </div>
+    
+</div>
+
+<div id="containerMiddle">
+    <div id="autoGodersArea" class="workAreaHidden"></div>
+    <div id="autoPuppetersArea" class="workAreaHidden"></div>
+    <div id="autoLeadersArea" class="workAreaHidden"></div>
+    <div id="autoSenatorsArea" class="workAreaHidden"></div>
+    <div id="autoGeniusersArea" class="workAreaHidden"></div>
+    <div id="autoResearchersArea" class="workAreaHidden"></div>
+    <div id="autoEvangersArea" class="workAreaHidden"></div>
+    <div id="autoManagersArea" class="workAreaHidden"></div>
+    <div id="autoHashersArea" class="workAreaHidden"></div>
+    <div id="autoDevversArea" class="workAreaHidden"></div>
+
+    <div class="clear"></div>
+</div>
+
+<div id="containerRight">
+    <div id="store">
+
+        <div id="upgradeALittleOomph" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	A Little Oomph
+                </div>
+                <div class="upgradeCost">
+                    Cost: 100 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+1</strong> extra&nbsp;engagements.
+                </div>
+                <div class="upgradeFlavor">
+                	This will&nbsp;help!
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeDiversifyingPlatforms" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Diversifying Platforms
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+2</strong> extra&nbsp;engagements.
+                </div>
+                <div class="upgradeFlavor">
+                	"Let's try other social&nbsp;networks!"
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeOffsiteIncentives" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Offsite Incentives
+                </div>
+                <div class="upgradeCost">
+                    Cost: 10,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicks on the terminal are <strong>twice</strong> as effective.
+                </div>
+                <div class="upgradeFlavor">
+                	Happy employees are engaged&nbsp;employees.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeIncorporation" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Incorporation
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+0.1</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	We're still little, but we've got&nbsp;potential!
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeGoingPublic" class="hidden">
+            
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Going Public
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+0.5</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	What could go&nbsp;wrong?
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeSplittingTwoForOne" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Splitting Two-For-One
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+2</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	The shareholders demand&nbsp;dividends.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeGlobalReOrg" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Global Re-Org
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Billion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+10</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	Cull the weak.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeAggressivePersuasion" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Aggressive Persuasion
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Billion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+20</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	"The me that you know isn't here&nbsp;anymore."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeSubliminalMotivation" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Subliminal Motivation
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Trillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+100</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	"I've come too far; I can't go&nbsp;back."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeControlledInteractions" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Controlled Interactions
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Trillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+200</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	"Tried to save myself, but myself keeps slipping&nbsp;away."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeTransactionalThoughts" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Transactional Thoughts
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Quadrillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+400</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	It keeps going. It always&nbsp;will.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeTheDigitalEmpire" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Transactional Thoughts
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Quadrillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Clicking the terminal creates <strong>+800</strong> engagements for each non-outsourced employee&nbsp;working.
+                </div>
+                <div class="upgradeFlavor">
+                	"Look upon my works, ye mighty, and&nbsp;despair."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeDeveloperDigs" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Developer Digs
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers gain <strong>+0.3</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                	A little light will brighten everyone's&nbsp;day.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeNewerMachines" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Newer Machines
+                </div>
+                <div class="upgradeCost">
+                    Cost: 10,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                	"We need something with a USB&nbsp;port."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeBrogrammers" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Brogrammers
+                </div>
+                <div class="upgradeCost">
+                    Cost: 100,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                	"Bro, hand me a PBR and let's pair program this&nbsp;email."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeDevHouse" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Dev House
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers gain <strong>+5</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                	"The sunshine outside is too&nbsp;bright."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradePowerRigs" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Power Rigs
+                </div>
+                <div class="upgradeCost">
+                    Cost: 50 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                	"We need PCs that look good in promotional&nbsp;shots."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeEfficiencyCenter" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Efficiency Center
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                	"Only the latest brutalism interior design will&nbsp;do!"
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeBasementDwellers" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Basement Dwellers
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Billion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers gain <strong>+40</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                	The dark will motivate them to work&nbsp;harder.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeVirtualParadise" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Virtual Paradise
+                </div>
+                <div class="upgradeCost">
+                    Cost: 50 Trillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                	"It's not real ... but it feels that&nbsp;way."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeJustAutomateThem" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                	Just Automate Them
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Quadrillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                	Email Developers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                	Their servos will be the only part of them whining&nbsp;now!
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeColorfulSpace" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Colorful Space
+                </div>
+                <div class="upgradeCost">
+                    Cost: 5,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators gain <strong>+1</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    A touch of color will keep creatives&nbsp;happy.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeStayingTrendy" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Staying Trendy
+                </div>
+                <div class="upgradeCost">
+                    Cost: 50,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    New computers will show off how great we&nbsp;are.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeYouthfulAmbition" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Youthful Ambition
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    "Check my totes sweet kicks in this&nbsp;selfie."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeShowcaseOffice" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Showcase Office
+                </div>
+                <div class="upgradeCost">
+                    Cost: 25 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators gain <strong>+30</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    "This place will look cool on&nbsp;Buzzfeed."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeFancyPantsTablets" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Fancy-Pants Tablets
+                </div>
+                <div class="upgradeCost">
+                    Cost: 5 Billion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    They're not practical but who&nbsp;cares!
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeLOLneurology" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    #LOLneurology
+                </div>
+                <div class="upgradeCost">
+                    Cost: 5 Trillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    Plug them in to get hashtags directly from their&nbsp;thoughts.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeSustenanceVats" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Sustenance Vats
+                </div>
+                <div class="upgradeCost">
+                    Cost: 15 Quadrillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Hashtag Creators gain <strong>+300</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    #ItTickles
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeChartsGraphs" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Charts &amp; Graphs
+                </div>
+                <div class="upgradeCost">
+                    Cost: 25,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Middle Managers gain <strong>+4</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    "Find a way to make all the lines rise&nbsp;exponentially."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeDressforSuccess" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Dress for Success
+                </div>
+                <div class="upgradeCost">
+                    Cost: 250,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Middle Managers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    "They won't take us seriously unless we dress this&nbsp;way."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeBoardroomBoom" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Boardroom Boom
+                </div>
+                <div class="upgradeCost">
+                    Cost: 2.5 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Middle Managers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    Put the new boardroom on the top floor to solidify our&nbsp;importance.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeLinesGoingUp" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Lines Going Up
+                </div>
+                <div class="upgradeCost">
+                    Cost: 125 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Middle Managers gain <strong>+70</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    Any chart can be made to look like whatever you&nbsp;want!
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeMyBossisaRobot" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    My Boss is a Robot
+                </div>
+                <div class="upgradeCost">
+                    Cost: 2.5 Billion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Middle Managers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    But did you know ... Robots are SMARTER than you. Robots work HARDER than you. Robots are BETTER than&nbsp;you.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeSealItUp" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Seal It Up
+                </div>
+                <div class="upgradeCost">
+                    Cost: 25 Trillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Middle Managers are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    We'll save a&nbsp;fortune!
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="upgradePersonaSegmentation" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Persona Segmentation
+                </div>
+                <div class="upgradeCost">
+                    Cost: 100,000 Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Media Evangelists gain <strong>+10</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    It's not just&nbsp;cookies!
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeWhatWeHavetoSay" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    What We Have to Say
+                </div>
+                <div class="upgradeCost">
+                    Cost: 1 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Media Evangelists are <strong>twice</strong> as&nbsp;effective.
+                </div>
+                <div class="upgradeFlavor">
+                    Making TED Talks out of&nbsp;soapboxes.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeGoalDiggerIdealism" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Goal Digger Idealism
+                </div>
+                <div class="upgradeCost">
+                    Cost: 10 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Media Evangelists are <strong>twice</strong> as&nbsp;effective
+                </div>
+                <div class="upgradeFlavor">
+                    "A goal digger is defined as an employee who pursues and successfully achieves company goals creatively, opportunistically, tirelessly, and, most important,&nbsp;legally."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeCultofPersonality" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Cult of Personality
+                </div>
+                <div class="upgradeCost">
+                    Cost: 500 Million Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Media Evangelists gain <strong>+300</strong> base engagements per&nbsp;second.
+                </div>
+                <div class="upgradeFlavor">
+                    Some call it "co-dependency." We just call it&nbsp;"dependency."
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeRecordRatings" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Record Ratings
+                </div>
+                <div class="upgradeCost">
+                    Cost: 100 Billion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Media Evangelists are <strong>twice</strong> as&nbsp;effective
+                </div>
+                <div class="upgradeFlavor">
+                    We couldn't stop listening even if we&nbsp;tried.
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeMessengersofTruth" class="hidden">
+            <div>
+                
+            </div>
+            <div class="upgradeTooltip">
+                <div class="upgradeTitle">
+                    Messengers of Truth
+                </div>
+                <div class="upgradeCost">
+                    Cost: 100 Trillion Clicks
+                </div>
+                <div class="upgradeDesc">
+                    Media Evangelists are <strong>twice</strong> as&nbsp;effective
+                </div>
+                <div class="upgradeFlavor">
+                    Their words guide our&nbsp;actions.
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <!-- OMG THIS PART SEPARATES THESE TWO PARTS SO I CAN ACTUALLY SEE THIS WHILE SCROLLING THROUGH THIS BIG STUPID FILE -->
+
+    <div id="autoGodersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Mythological Demigod
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoGodersCost">50000000000</span> Clicks
+            </span> 
+            <span id="autoGodersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Mythological Demigod
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoGodersInfoCost">50000000000</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoGodersInfoAmount">0</span> mythological demigods.
+            </div>
+            <div class="btnInfoDesc">
+                Demigods are pretty cool when they're not trying to kill you (either on purpose or on accident). Also they can click our media engagements like million times a second.&nbsp;Literally.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoGodersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoGodersInfoAmountStat">0</span> generating <span id="autoGodersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoPuppetersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Illuminati Puppetmaster
+        </p>
+        <p> 
+            <span class="numPrice">
+                <span id="autoPuppetersCost">6666666666</span> Clicks
+            </span>
+            <span id="autoPuppetersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Illuminati Puppetmaster
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoPuppetersInfoCost">6666666666</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoPuppetersInfoAmount">0</span> Illuminati puppetmasters.
+            </div>
+            <div class="btnInfoDesc">
+                And lo, upon the Altar, a Square and Compasses bear witness of a new divine being: the Great Click rises forth for control in this life and hereafter. So it is done, in secret and in&nbsp;shadow.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoPuppetersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoPuppetersInfoAmountStat">0</span> generating <span id="autoPuppetersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoLeadersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            World Leader
+        </p>
+        <p> 
+            <span class="numPrice">
+                <span id="autoLeadersCost">60000000</span> Clicks
+            </span>
+            <span id="autoLeadersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                World Leader
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoLeadersInfoCost">60000000</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoLeadersInfoAmount">0</span> world leaders.
+            </div>
+            <div class="btnInfoDesc">
+                Some world leaders don't even have to bother with getting approval to pass laws forcing their populations to click our media engagements. We should start with those ones&nbsp;first.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoLeadersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoLeadersInfoAmountStat">0</span> generating <span id="autoLeadersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoSenatorsBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Pocketed Senator
+        </p>
+        <p> 
+            <span class="numPrice">
+                <span id="autoSenatorsCost">1200000</span> Clicks
+            </span>
+            <span id="autoSenatorsAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Pocketed Senator
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoSenatorsInfoCost">1200000</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoSenatorsInfoAmount">0</span> pocketed senators.
+            </div>
+            <div class="btnInfoDesc">
+                Listen, champ, I like the cut of your jib. And all of these districts are just waiting for your direct represenation in Congress. But political campaigns aint cheap, and it looks like you have the funds that could help us grease the wheels. If you know what I&nbsp;mean.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoSenatorsInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoSenatorsInfoAmountStat">0</span> generating <span id="autoSenatorsInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoGeniusersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Evil Genius
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoGeniusersCost">175000</span> Clicks
+            </span>
+            <span id="autoGeniusersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Evil Genius
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoGeniusersInfoCost">175000</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoGeniusersInfoAmount">0</span> evil geniuses.
+            </div>
+            <div class="btnInfoDesc">
+                ha ha haahaha haha haaah ha ha ha Ha ha Ha HA HA HAHA HAAA HA AHA HAHAHAHAHAHAHA HAHAHAH!&nbsp;HAHAH!!!
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoGeniusersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoGeniusersInfoAmountStat">0</span> generating <span id="autoGeniusersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoResearchersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Research Developer
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoResearchersCost">38000</span> Clicks
+            </span>
+            <span id="autoResearchersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Research Developer
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoResearchersInfoCost">38000</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoResearchersInfoAmount">0</span> research developers.
+            </div>
+            <div class="btnInfoDesc">
+                Research developers come up with entirely new mediums for your content to be clicked on, from tiny mobile phones that you wear on your wrist to USB-ports that attach to your brain. So users can keep clicking even when they're asleep. (And so can&nbsp;you.)
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoResearchersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoResearchersInfoAmountStat">0</span> generating <span id="autoResearchersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoEvangersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Media Evangelist
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoEvangersCost">8600</span> Clicks
+            </span>
+            <span id="autoEvangersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Media Evangelist
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoEvangersInfoCost">8600</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoEvangersInfoAmount">0</span> media evangalists.
+            </div>
+            <div class="btnInfoDesc">
+                Finding the right harmonic synergy between brand and user engagement requires complex systems that utilize gamification in the cloud and content marketing. Media evangalists explore this granular narrative with new&nbsp;audiences.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoEvangersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoEvangersInfoAmountStat">0</span> generating <span id="autoEvangersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoManagersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Middle Manager
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoManagersCost">2600</span> Clicks
+            </span>
+            <span id="autoManagersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Middle Manager
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoManagersInfoCost">2600</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoManagersInfoAmount">0</span> middle managers.
+            </div>
+            <div class="btnInfoDesc">
+                Middle managers make sure workers are effective by hanging inspirational posters around the office and chatting with subordinates at the coffee machine in the&nbsp;kitchenette.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoManagersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoManagersInfoAmountStat">0</span> generating <span id="autoManagersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoHashersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Hashtag Creator
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoHashersCost">420</span> Clicks
+            </span>
+            <span id="autoHashersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Hashtag Creator
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoHashersInfoCost">420</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoHashersInfoAmount">0</span> hashtag creators.
+            </div>
+            <div class="btnInfoDesc">
+                Hashtag creators engage <em>#indiekid</em> markets using the latest <em>#social</em> network outlets, attracting bored <em>#millennial</em> internet users faster than you can take a <em>#selfie</em>! <em>#YOLO</em> <em>#JustMadeUp</em> <em>#ClickerClicker</em>
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoHashersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoHashersInfoAmountStat">0</span> generating <span id="autoHashersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoDevversBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Email Developer
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoDevversCost">85</span> Clicks
+            </span>
+            <span id="autoDevversAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Email Developer
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoDevversInfoCost">85</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoDevversInfoAmount">0</span> email developers.
+            </div>
+            <div class="btnInfoDesc">
+                Email developers create direct marketing campaigns that people open to unsubscribe from. Make sure to keep them&nbsp;happy!
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoDevversInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoDevversInfoAmountStat">0</span> generating <span id="autoDevversInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoClickersBuy" class="hidden">
+        <div class="avatar"></div>
+        <p class="autoName">
+            Outsourced Clicker
+        </p>
+        <p>
+            <span class="numPrice">
+                <span id="autoClickersCost">10</span> Clicks
+            </span>
+            <span id="autoClickersAmount" class="numOwned">0</span>
+        </p>
+        <div class="btnInfo">
+            <div class="btnInfoTitle">
+                Outsourced Clicker
+            </div>
+            <div class="btnInfoCost">
+                Cost: <span id="autoClickersInfoCost">10</span> Clicks
+            </div>
+            <div class="btnInfoOwned">
+                You have <span id="autoClickersInfoAmount">0</span> outsourced clickers.
+            </div>
+            <div class="btnInfoDesc">
+                Outsourced clickers click the terminal for you so you can be lazy! No one knows where they live or what their names are, but that's&nbsp;okay.
+            </div>
+            <div class="btnInfoAPS">
+                <div>Each generates <span id="autoClickersInfoAmountPS">0</span> clicks per second.</div>
+                <div><span id="autoClickersInfoAmountStat">0</span> generating <span id="autoClickersInfoAmountTPS">0</span> clicks per second.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+    </body>
+</html>
