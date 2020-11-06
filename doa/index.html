@@ -13,6 +13,7 @@
 			padding: 0;
 		}
 
+
 		/* Map */
 		#container-map {
 			display: inline-block;
@@ -35,12 +36,36 @@
 			cursor: move;
 		}
 
+		.city {
+			display: block;
+			background-color: rgba(255, 0, 0, 0.4);
+			width: 16px;
+			height: 16px;
+			position: absolute;
+		}
+
+		.city-box {
+			display: none;
+			opacity: 0;
+			background: black;
+			width: 200px;
+			height: 60px;
+			position: absolute;
+			top: 20px;
+			left: -92px;
+		}
+
+		.city-box.active {
+			display: block;
+			opacity: 1;
+		}
+
+
 		/* Nations */
 		#container-nations {
 			display: inline-block;
 			background-color: #242424;
 			color: #fff;
-			overflow: hidden;
 			width: 20vw;
 			min-width: 380px;
 			height: 100vh;
@@ -49,6 +74,10 @@
 			right: 0;
 			overflow-x: hidden;
 			overflow-y: scroll;
+		}
+
+		#container-nations::-webkit-scrollbar {
+			display: none;
 		}
 
 		#header, #nations {
@@ -96,17 +125,43 @@
 
 		.nation {
 			display: block;
-			width: calc(100% - 30px);
+			width: 100%;
 			margin-bottom: 30px;
-			padding: 10px 15px;
-			border: 3px solid #303030;
-			border-radius: 2px;
+			padding: 0;
+			border: 3px solid #62656f;
+			border-radius: 7px;
 		}
 
-		.nation h2 {
-			font-weight: 100;
+		.nation-title {
+			display: block;
+			background: #383a3f;
+			width: 100%;
+			height: 44px;
 			margin: 0;
 			padding: 0;
+			position: relative;
+		}
+
+		.nationflag {
+			background-image: url(images/sprite_flags.png);
+			display: inline-block;
+			width: 28px;
+			height: 24px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+
+		.nationname {
+			display: inline-block;
+			color: #fff;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: uppercase;
+			height: 24px;
+			position: absolute;
+			top: 8px;
+			left: 48px;
 		}
 
 		.party {
@@ -129,6 +184,11 @@
 			display: inline-block;
 		}
 
+		/* Flags */
+		.flag-algeria {
+			background-position: 0px 0px;
+		}
+
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="script/jquery.mapbox.js"></script>
@@ -141,7 +201,18 @@
 			<div style="background: url(images/africamap.png) no-repeat; width:3800px; height:3800px;" class="map-layer"> 
 				<img src="images/africamap.png" alt="" /> 
 				<div class="mapcontent">
-					<div id="cities"></div>
+					<div id="cities">
+						
+						<!-- testing city delete later -->
+						<div data-box="123" class="city" style="top: 1508px; left: 1530px;">
+							<div id="123" class="city-box">Abuja, Nigeria</div>
+						</div>
+
+						<div data-box="124" class="city" style="top: 1578px; left: 1372px;">
+							<div id="124" class="city-box">Ibadan, Nigeria</div>
+						</div>
+
+					</div>
 				</div> 
 			</div> 
 		</div>
@@ -164,8 +235,12 @@
 		</div>
 		<div id="nations">
 			<h3>List of Nations</h3>
+
 			<div class="nation">
-				<h2>Algeria</h2>
+				<div class="nation-title">
+					<div class="nationflag flag-algeria"></div>
+					<div class="nationname">Algeria</div>
+				</div>
 				<div class="party">
 					<div class="partyflag">flag icon</div>
 					<div class="partyname">FIS</div>
@@ -178,61 +253,6 @@
 				</div>
 			</div>
 
-			<div class="nation">
-				<h2>Angola</h2>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FIS</div>
-					<div class="partyplayer">ExtraNoise</div>
-				</div>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FLN</div>
-					<div class="partyplayer"><em>Unclaimed</em></div>
-				</div>
-			</div>
-
-			<div class="nation">
-				<h2>Benin</h2>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FIS</div>
-					<div class="partyplayer">ExtraNoise</div>
-				</div>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FLN</div>
-					<div class="partyplayer"><em>Unclaimed</em></div>
-				</div>
-			</div>
-
-			<div class="nation">
-				<h2>Botwsana</h2>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FIS</div>
-					<div class="partyplayer">ExtraNoise</div>
-				</div>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FLN</div>
-					<div class="partyplayer"><em>Unclaimed</em></div>
-				</div>
-			</div>
-
-			<div class="nation">
-				<h2>Burkina Faso</h2>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FIS</div>
-					<div class="partyplayer">ExtraNoise</div>
-				</div>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
-					<div class="partyname">FLN</div>
-					<div class="partyplayer"><em>Unclaimed</em></div>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -242,7 +262,16 @@
 		}); 
 	</script>
 
+	<script type="text/javascript"> 
+		$('div').on('click', function () {
+			var divID = $(this).attr('data-box');
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#' + divID).addClass('active').siblings().removeClass('active');
+		}); 
+	</script>
+
 	<script>
+		/* lets come back to this later 
 		fetch('script/cities.json')
 			.then(function (response) {
 				return response.json();
@@ -263,6 +292,7 @@
 				mainContainer.appendChild(div);
 			}
 		}
+		*/
 	</script>
 
 </body>
