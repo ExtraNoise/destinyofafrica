@@ -47,9 +47,9 @@
 		.city-box {
 			display: none;
 			opacity: 0;
-			background: black;
-			width: 200px;
-			height: 60px;
+			background-image: url(images/img_citybox.png);
+			width: 204px;
+			height: 126px;
 			position: absolute;
 			top: 20px;
 			left: -92px;
@@ -58,6 +58,47 @@
 		.city-box.active {
 			display: block;
 			opacity: 1;
+		}
+
+		.cityflag {
+			background-image: url(images/sprite_flags.png);
+			display: inline-block;
+			width: 28px;
+			height: 24px;
+			position: absolute;
+			top: 23px;
+			left: 13px;
+		}
+
+		.cityname {
+			display: inline-block;
+			color: #fff;
+			font-size: 15px;
+			font-weight: 600;
+			position: absolute;
+			top: 18px;
+			left: 51px;
+		}
+
+		.citycountry {
+			display: inline-block;
+			color: #afb1b8;
+			font-size: 11px;
+			font-weight: 400;
+			position: absolute;
+			top: 34px;
+			left: 51px;
+		}
+
+		.cityseats {
+			display: inline-block;
+			color: #62656f;
+			font-size: 30px;
+			font-weight: 100;
+			letter-spacing: -0.06em;
+			position: absolute;
+			top: 14px;
+			right: 15px;
 		}
 
 
@@ -164,16 +205,94 @@
 			left: 48px;
 		}
 
+		.nationseats {
+			display: inline-block;
+			color: #62656f;
+			font-size: 30px;
+			font-weight: 100;
+			letter-spacing: -0.06em;
+			position: absolute;
+			top: 1px;
+			right: 10px;
+		}
+
+		.nation-president {
+			border-bottom: 3px solid #62656f;
+			font-size: 12px;
+			line-height: 14px;
+			height: 96px;
+			position: relative;
+		}
+
+		.hos {
+			background-image: url(images/sprite_headsofstate.png);
+			display: inline-block;
+			width: 64px;
+			height: 76px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+
+		.hosname {
+			position: absolute;
+			top: 10px;
+			left: 84px;
+		}
+
+		.nationelections {
+			width: 250px;
+			position: absolute;
+			top: 58px;
+			left: 84px;
+		}
+
+		.nationelections-text {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.nationelections-date {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		.nationparties {
+			width: 250px;
+			position: absolute;
+			top: 73px;
+			left: 84px;
+		}
+
+		.nationparties-text {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.nationparties-val {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
 		.party {
 			display: block;
 			height: 40px;
 		}
 
 		.partyflag {
+			background-image: url(images/sprite_flags.png);
 			display: inline-block;
-			width: 40px;
-			height: 40px;
-			background: red;
+			width: 28px;
+			height: 24px;
+			position: absolute;
 		}
 
 		.partyname {
@@ -184,10 +303,29 @@
 			display: inline-block;
 		}
 
+		/* Party Colors */
+		.party-isl {color: #73a51d;}
+		.party-com {color: #ae1753;}
+		.party-soc {color: #d21940;}
+		.party-demsoc {color: #f61e1e;}
+		.party-socdem {color: #f05c0b;}
+		.party-pro {color: #f5971a;}
+		.party-lib {color: #ffbf00;}
+		.party-con {color: #73b6ef;}
+		.party-nat {color: #5c6bd5;}
+		.party-fas {color: #897c76;}
+		.party-chr {color: #be49c2;}
+
 		/* Flags */
-		.flag-algeria {
-			background-position: 0px 0px;
-		}
+		/* Nations */
+		.flag-algeria {background-position: -0px -0px;}
+		.flag-nigeria {background-position: -84px -264px;}
+		/* Parties */
+		.flag-fis {background-position: -28px -0px;}
+		.flag-fln {background-position: -56px -0px;}
+
+		/* Heads of State */
+		.hos-algeria {background-position: -0px -0px;}
 
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -205,11 +343,21 @@
 						
 						<!-- testing city delete later -->
 						<div data-box="123" class="city" style="top: 1508px; left: 1530px;">
-							<div id="123" class="city-box">Abuja, Nigeria</div>
+							<div id="123" class="city-box">
+								<div class="cityflag flag-nigeria"></div>
+								<div class="cityname">Abuja</div>
+								<div class="citycountry">Nigeria</div>
+								<div class="cityseats">7</div>
+							</div>
 						</div>
 
 						<div data-box="124" class="city" style="top: 1578px; left: 1372px;">
-							<div id="124" class="city-box">Ibadan, Nigeria</div>
+							<div id="124" class="city-box">
+								<div class="cityflag flag-nigeria"></div>
+								<div class="cityname">Ibadan</div>
+								<div class="citycountry">Nigeria</div>
+								<div class="cityseats">12</div>
+							</div>
 						</div>
 
 					</div>
@@ -240,14 +388,31 @@
 				<div class="nation-title">
 					<div class="nationflag flag-algeria"></div>
 					<div class="nationname">Algeria</div>
+					<div class="nationseats">29</div>
 				</div>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
+				<div class="nation-president">
+					<div class="hos hos-algeria"></div>
+					<div class="hosname party-nat">
+						President<br/>
+						<strong>Chadli Bendjedid</strong><br/>
+						<strong>FLN</strong>
+					</div>
+					<div class="nationelections">
+						<div class="nationelections-text">Next Election</div>
+						<div class="nationelections-date">January 1997</div>
+					</div>
+					<div class="nationparties">
+						<div class="nationparties-text">Parties Allowed</div>
+						<div class="nationparties-val">Yes</div>
+					</div>
+				</div>
+				<div class="nationparty party-isl">
+					<div class="partyflag flag-fis"></div>
 					<div class="partyname">FIS</div>
 					<div class="partyplayer">ExtraNoise</div>
 				</div>
-				<div class="party">
-					<div class="partyflag">flag icon</div>
+				<div class="nationparty party-nat">
+					<div class="partyflag flag-fln"></div>
 					<div class="partyname">FLN</div>
 					<div class="partyplayer"><em>Unclaimed</em></div>
 				</div>
@@ -264,9 +429,15 @@
 
 	<script type="text/javascript"> 
 		$('div').on('click', function () {
+
+			var divID = $(this).attr('data-box');
+			$('#' + divID).addClass('active');
+
+			/* original - working
 			var divID = $(this).attr('data-box');
 			$(this).addClass('active').siblings().removeClass('active');
 			$('#' + divID).addClass('active').siblings().removeClass('active');
+			*/
 		}); 
 	</script>
 
