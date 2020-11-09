@@ -107,8 +107,8 @@
 			display: inline-block;
 			background-color: #242424;
 			color: #fff;
-			width: 20vw;
-			min-width: 380px;
+			width: 390px;
+			min-width: 390px;
 			height: 100vh;
 			position: absolute;
 			top: 0;
@@ -122,7 +122,7 @@
 		}
 
 		#header, #nations {
-			width: 90%;
+			width: 350px;
 			margin: 0 auto;
 		}
 
@@ -166,21 +166,23 @@
 
 		.nation {
 			display: block;
-			width: 100%;
-			margin-bottom: 30px;
+			background-image: url(images/img_natbox.png);
+			background-repeat: no-repeat;
+			width: 350px;
+			height: 230px;
+			margin-bottom: 20px;
 			padding: 0;
-			border: 3px solid #62656f;
-			border-radius: 7px;
+			position: relative;
 		}
 
 		.nation-title {
 			display: block;
-			background: #383a3f;
 			width: 100%;
-			height: 44px;
+			height: 46px;
 			margin: 0;
 			padding: 0;
 			position: relative;
+			top: 3px;
 		}
 
 		.nationflag {
@@ -189,8 +191,8 @@
 			width: 28px;
 			height: 24px;
 			position: absolute;
-			top: 10px;
-			left: 10px;
+			top: 11px;
+			left: 13px;
 		}
 
 		.nationname {
@@ -201,8 +203,8 @@
 			text-transform: uppercase;
 			height: 24px;
 			position: absolute;
-			top: 8px;
-			left: 48px;
+			top: 9px;
+			left: 52px;
 		}
 
 		.nationseats {
@@ -212,16 +214,16 @@
 			font-weight: 100;
 			letter-spacing: -0.06em;
 			position: absolute;
-			top: 1px;
-			right: 10px;
+			top: 2px;
+			right: 13px;
 		}
 
 		.nation-president {
-			border-bottom: 3px solid #62656f;
 			font-size: 12px;
 			line-height: 14px;
 			height: 96px;
 			position: relative;
+			top: 3px;
 		}
 
 		.hos {
@@ -231,20 +233,20 @@
 			height: 76px;
 			position: absolute;
 			top: 10px;
-			left: 10px;
+			left: 13px;
 		}
 
 		.hosname {
 			position: absolute;
 			top: 10px;
-			left: 84px;
+			left: 87px;
 		}
 
 		.nationelections {
-			width: 250px;
+			width: 249px;
 			position: absolute;
-			top: 58px;
-			left: 84px;
+			top: 57px;
+			left: 87px;
 		}
 
 		.nationelections-text {
@@ -262,10 +264,10 @@
 		}
 
 		.nationparties {
-			width: 250px;
+			width: 249px;
 			position: absolute;
 			top: 73px;
-			left: 84px;
+			left: 87px;
 		}
 
 		.nationparties-text {
@@ -282,25 +284,76 @@
 			right: 0;
 		}
 
-		.party {
+		.nation-party {
 			display: block;
-			height: 40px;
+			font-size: 12px;
+			width: 100%;
+			height: 46px;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			top: 3px;
+		}
+
+		.partyleft, .partyright {
+			width: 160px;
+			height: 70px;
+		}
+
+		.partyleft {
+			text-align: left;
+			position: absolute;
+			top: 14px;
+			left: 13px;
+		}
+
+		.partyright {
+			text-align: right;
+			position: absolute;
+			top: 14px;
+			right: 13px;
 		}
 
 		.partyflag {
-			background-image: url(images/sprite_flags.png);
 			display: inline-block;
+			background-image: url(images/sprite_flags.png);
 			width: 28px;
 			height: 24px;
 			position: absolute;
+			top: 0px;
 		}
 
 		.partyname {
 			display: inline-block;
+			font-weight: bold;
+			position: absolute;
+			top: 26px;
 		}
 
 		.partyplayer {
 			display: inline-block;
+			letter-spacing: -0.04em;
+			position: absolute;
+			top: 42px;
+		}
+
+		.partyleft .partyflag, .partyleft .partyname, .partyleft .partyplayer {
+			left: 0;
+		}
+
+		.partyright .partyflag, .partyright .partyname, .partyright .partyplayer {
+			right: 0;
+		}
+
+		.legislature {
+			display: block;
+			background-image: url(images/sprite_legislatures.png);
+			background-repeat: no-repeat;
+			width: 200px;
+			height: 70px;
+			position: absolute;
+			top: 8px;
+			left: 72px;
 		}
 
 		/* Party Colors */
@@ -326,6 +379,9 @@
 
 		/* Heads of State */
 		.hos-algeria {background-position: -0px -0px;}
+
+		/* Legislatures */
+		.leg-algeria {background-position: -0px -0px;}
 
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -402,19 +458,22 @@
 						<div class="nationelections-date">January 1997</div>
 					</div>
 					<div class="nationparties">
-						<div class="nationparties-text">Parties Allowed</div>
-						<div class="nationparties-val">Yes</div>
+						<div class="nationparties-text">Political Parties</div>
+						<div class="nationparties-val">Parties Allowed</div>
 					</div>
 				</div>
-				<div class="nationparty party-isl">
-					<div class="partyflag flag-fis"></div>
-					<div class="partyname">FIS</div>
-					<div class="partyplayer">ExtraNoise</div>
-				</div>
-				<div class="nationparty party-nat">
-					<div class="partyflag flag-fln"></div>
-					<div class="partyname">FLN</div>
-					<div class="partyplayer"><em>Unclaimed</em></div>
+				<div class="nation-party">
+					<div class="legislature leg-algeria"></div>
+					<div class="partyleft party-isl">
+						<div class="partyflag flag-fis"></div>
+						<div class="partyname">FIS</div>
+						<div class="partyplayer">ExtraNoise</div>
+					</div>
+					<div class="partyright party-nat">
+						<div class="partyflag flag-fln"></div>
+						<div class="partyname">FLN</div>
+						<div class="partyplayer"><em>Unclaimed</em></div>
+					</div>
 				</div>
 			</div>
 
