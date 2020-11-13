@@ -66,7 +66,7 @@
 			<div class="nation">
 				<div class="nation-title">
 					<div class="nationflag flag-algeria"></div>
-					<div class="nationname">Algeria</div>
+					<div class="nationname"><a onclick="algeria()">Algeria</a></div>
 					<div class="nationseats">29</div>
 				</div>
 				<div class="nation-president">
@@ -104,7 +104,7 @@
 			<div class="nation">
 				<div class="nation-title">
 					<div class="nationflag flag-angola"></div>
-					<div class="nationname">Angola</div>
+					<div class="nationname"><a onclick="angola()">Angola</a></div>
 					<div class="nationseats">30</div>
 				</div>
 				<div class="nation-president">
@@ -141,7 +141,7 @@
 			<div class="nation">
 				<div class="nation-title">
 					<div class="nationflag flag-egypt"></div>
-					<div class="nationname">Egypt</div>
+					<div class="nationname"><a onclick="egypt()">Egypt</a></div>
 					<div class="nationseats">47</div>
 				</div>
 				<div class="nation-president">
@@ -220,9 +220,10 @@
 			$("#viewport").mapbox({mousewheel: true}); 
 		}); 
 
-		function libya() {
-			$("#viewport").mapbox("center", {x: 2052, y: 618});
-		};
+		function algeria() {$("#viewport").mapbox("center", {x: 1360, y: 496});};
+		function angola() {$("#viewport").mapbox("center", {x: 2016, y: 2514});};
+		function egypt() {$("#viewport").mapbox("center", {x: 2608, y: 616});};
+		function libya() {$("#viewport").mapbox("center", {x: 2052, y: 618});};
 	</script>
 
 	<script type="text/javascript"> 
