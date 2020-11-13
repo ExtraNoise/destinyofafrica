@@ -1,0 +1,537 @@
+/* Universal */
+body {
+	font-family: 'Open Sans',Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Map */
+#container-map {
+	display: inline-block;
+	background-color: #1d1d1d;
+	color: #fff;
+	overflow: hidden;
+	width: calc(100vw - 380px);
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#viewport {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#viewport:active {
+	cursor: move;
+}
+
+.city {
+	display: block;
+	background-color: rgba(255, 0, 0, 0.4);
+	width: 16px;
+	height: 16px;
+	position: absolute;
+}
+
+.city-box {
+	display: none;
+	opacity: 0;
+	background-image: url('../images/img_citybox.png');
+	width: 206px;
+	height: 124px;
+	position: absolute;
+	top: 20px;
+	left: -95px;
+}
+
+.city-box.active {
+	display: block;
+	opacity: 1;
+}
+
+.cityflag {
+	background-image: url('../images/sprite_flags.png');
+	display: inline-block;
+	width: 28px;
+	height: 24px;
+	position: absolute;
+	top: 23px;
+	left: 13px;
+}
+
+.cityname {
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	position: absolute;
+	top: 18px;
+	left: 51px;
+}
+
+.citycountry {
+	display: inline-block;
+	color: #afb1b8;
+	font-size: 11px;
+	font-weight: 400;
+	position: absolute;
+	top: 34px;
+	left: 51px;
+}
+
+.cityseats {
+	display: inline-block;
+	color: #afb1b8;
+	font-size: 30px;
+	font-weight: 100;
+	letter-spacing: -0.06em;
+	position: absolute;
+	top: 14px;
+	right: 15px;
+}
+
+
+/* Nations */
+#container-nations {
+	display: inline-block;
+	background-color: #01080e;
+	border-left: 3px solid #235a79;
+	color: #fff;
+	width: 380px;
+	min-width: 380px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#container-nations::-webkit-scrollbar {
+	display: none;
+}
+
+#header, #nations {
+	width: 320px;
+	margin: 0 45px 0 15px;
+}
+
+.logo {
+	background-image: url('../images/logo_doa_small.png');
+	background-repeat: no-repeat;
+	width: 285px;
+	height: 156px;
+	margin: 40px auto 0;
+}
+
+.logo h1 {
+	display: none;
+}
+
+.menu {
+	width: 320px;
+	height: 35px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 11px;
+	position: relative;
+}
+
+.btnAbout {
+	display: inline-block;
+	background: url('../images/btn_about.png') no-repeat center center;
+	width: 128px;
+	height: 35px;
+	border: 0;
+	outline: none;
+	position: absolute;
+	left: 0;
+}
+.btnAbout:hover, .btnAbout:active {
+	background: url('../images/btn_about_hover.png') no-repeat center center;
+}
+
+.btnDiscord, .btnReddit, .btnTwitter, .btnPatreon {
+	display: inline-block;
+	width: 38px;
+	height: 35px;
+	border: 0;
+	outline: none;
+	position: absolute;
+}
+
+.btnDiscord {
+	background: url('../images/btn_discord.png') no-repeat center center;
+	right: 144px;
+}
+.btnDiscord:hover, .btnDiscord:active {
+	background: url('../images/btn_discord_hover.png') no-repeat center center;
+}
+
+.btnReddit {
+	background: url('../images/btn_reddit.png') no-repeat center center;
+	right: 96px;
+}
+.btnReddit:hover, .btnReddit:active {
+	background: url('../images/btn_reddit_hover.png') no-repeat center center;
+}
+
+.btnTwitter {
+	background: url('../images/btn_twitter.png') no-repeat center center;
+	right: 48px;
+}
+.btnTwitter:hover, .btnTwitter:active {
+	background: url('../images/btn_twitter_hover.png') no-repeat center center;
+}
+
+.btnPatreon {
+	background: url('../images/btn_patreon.png') no-repeat center center;
+	right: 0;
+}
+.btnPatreon:hover, .btnPatreon:active {
+	background: url('../images/btn_patreon_hover.png') no-repeat center center;
+}
+
+#index {
+	display: block;
+	background: #031b2f;
+	width: 30px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.turninfo {
+	display: block;
+	background-image: url('../images/img_dateturnbox.png');
+	width: 320px;
+	height: 105px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.turn-date, .turn-turn {
+	display: block;
+	color: #fff8d7;
+	font-size: 20px;
+	text-shadow: 0px 0px 8px #fff8d7;
+	position: relative;
+}
+
+.turn-date {
+	top: 12px;
+}
+
+.turn-turn {
+	top: 35px;
+}
+
+.nation {
+	display: block;
+	background-image: url('../images/img_natbox.png');
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 240px;
+	margin-bottom: 15px;
+	padding: 0;
+	position: relative;
+}
+
+.nation-title {
+	display: block;
+	width: 100%;
+	height: 46px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 3px;
+}
+
+.nationflag {
+	background-image: url('../images/sprite_flags.png');
+	display: inline-block;
+	width: 28px;
+	height: 24px;
+	position: absolute;
+	top: 11px;
+	left: 13px;
+}
+
+.nationname {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	height: 24px;
+	position: absolute;
+	top: 9px;
+	left: 52px;
+}
+
+.nationname a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nationseats {
+	display: inline-block;
+	color: #c4e2f2;
+	font-size: 30px;
+	font-weight: 100;
+	letter-spacing: -0.06em;
+	position: absolute;
+	top: 2px;
+	right: 13px;
+}
+
+.nation-president {
+	font-size: 12px;
+	line-height: 14px;
+	height: 96px;
+	position: relative;
+	top: 3px;
+}
+
+.hos {
+	background-image: url('../images/sprite_headsofstate.png');
+	display: inline-block;
+	width: 64px;
+	height: 76px;
+	position: absolute;
+	top: 10px;
+	left: 13px;
+}
+
+.hosname {
+	position: absolute;
+	top: 10px;
+	left: 87px;
+}
+
+.nationelections {
+	width: 220px;
+	position: absolute;
+	top: 57px;
+	left: 87px;
+}
+
+.nationelections-text {
+	display: block;
+	color: #c4e2f2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.nationelections-date {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.nationparties {
+	width: 220px;
+	position: absolute;
+	top: 73px;
+	left: 87px;
+}
+
+.nationparties-text {
+	display: block;
+	color: #c4e2f2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.nationparties-val {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.-fraud {
+	background-color: #c3203f;
+	color: #01080e;
+	font-weight: 800;
+	padding: 0 3px;
+}
+
+.nation-party {
+	display: block;
+	font-size: 12px;
+	width: 100%;
+	height: 46px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 3px;
+}
+
+.partyleft, .partyright {
+	width: 160px;
+	height: 70px;
+}
+
+.partyleft {
+	text-align: left;
+	position: absolute;
+	top: 14px;
+	left: 13px;
+}
+
+.partyright {
+	text-align: right;
+	position: absolute;
+	top: 14px;
+	right: 13px;
+}
+
+.partyflag {
+	display: inline-block;
+	background-image: url('../images/sprite_flags.png');
+	width: 28px;
+	height: 24px;
+	position: absolute;
+	top: 0px;
+}
+
+.partyname {
+	display: inline-block;
+	font-weight: bold;
+	position: absolute;
+	top: 36px;
+}
+
+.partyplayer {
+	display: inline-block;
+	letter-spacing: -0.04em;
+	position: absolute;
+	top: 51px;
+}
+
+.partyleft .partyflag, .partyleft .partyname, .partyleft .partyplayer {
+	left: 0;
+}
+
+.partyright .partyflag, .partyright .partyname, .partyright .partyplayer {
+	right: 0;
+}
+
+.legislature {
+	display: block;
+	background-image: url('../images/sprite_legislatures.png');
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 70px;
+	position: absolute;
+	top: 8px;
+	left: 72px;
+}
+
+
+/* Party Colors */
+.party-isl {color: #73a51d;}
+.party-com {color: #ae1753;}
+.party-soc {color: #d21940;}
+.party-demsoc {color: #f61e1e;}
+.party-socdem {color: #f05c0b;}
+.party-pro {color: #f5971a;}
+.party-lib {color: #ffbf00;}
+.party-con {color: #73b6ef;}
+.party-nat {color: #5c6bd5;}
+.party-fas {color: #897c76;}
+.party-chr {color: #be49c2;}
+
+
+/* Nation Flags */
+.flag-algeria {background-position: -0px -0px;}
+.flag-angola {background-position: -84px -0px;}
+.flag-benin {background-position: -168px -0px;}
+.flag-botswana {background-position: -0px -24px;}
+.flag-burkinafaso {background-position: -84px -24px;}
+.flag-burundi {background-position: -168px -24px;}
+.flag-cameroon {background-position: -0px -48px;}
+.flag-capeverde {background-position: -84px -48px;}
+.flag-car {background-position: -168px -48px;}
+.flag-chad {background-position: -0px -72px;}
+.flag-comoros {background-position: -84px -72px;}
+.flag-congo {background-position: -168px -72px;}
+.flag-djibouti {background-position: -0px -96px;}
+.flag-egypt {background-position: -84px -96px;}
+.flag-eqguinea {background-position: -168px -96px;}
+.flag-ethiopia {background-position: -0px -120px;}
+.flag-gabon {background-position: -84px -120px;}
+.flag-gambia {background-position: -168px -120px;}
+.flag-ghana {background-position: -0px -144px;}
+.flag-guinea {background-position: -84px -144px;}
+.flag-guineabissau {background-position: -168px -144px;}
+.flag-ivorycoast {background-position: -0px -168px;}
+.flag-kenya {background-position: -84px -168px;}
+.flag-lesotho {background-position: -168px -168px;}
+.flag-liberia {background-position: -0px -192px;}
+.flag-libya {background-position: -84px -192px;}
+.flag-madagascar {background-position: -168px -192px;}
+.flag-malawi {background-position: -0px -216px;}
+.flag-mali {background-position: -84px -216px;}
+.flag-mauritania {background-position: -168px -216px;}
+.flag-morocco {background-position: -0px -240px;}
+.flag-mozambique {background-position: -84px -240px;}
+.flag-namibia {background-position: -168px -240px;}
+.flag-niger {background-position: -0px -264px;}
+.flag-nigeria {background-position: -84px -264px;}
+.flag-rwanda {background-position: -168px -264px;}
+.flag-sahrawi {background-position: -0px -288px;}
+.flag-saotome {background-position: -84px -288px;}
+.flag-senegal {background-position: -168px -288px;}
+.flag-sierraleone {background-position: -0px -312px;}
+.flag-somalia {background-position: -84px -312px;}
+.flag-southafrica {background-position: -168px -312px;}
+.flag-sudan {background-position: -0px -336px;}
+.flag-swaziland {background-position: -84px -336px;}
+.flag-tanzania {background-position: -168px -336px;}
+.flag-togo {background-position: -0px -360px;}
+.flag-tunisia {background-position: -84px -360px;}
+.flag-uganda {background-position: -168px -360px;}
+.flag-zaire {background-position: -0px -384px;}
+.flag-zambia {background-position: -84px -384px;}
+.flag-zimbabwe {background-position: -168px -384px;}
+
+
+/* Org Flags */
+.flag-isil {background-position: -28px -432px;}
+.flag-un {background-position: -112px -456px;}
+
+
+/* Party Flags */
+.flag-fis {background-position: -28px -0px;}
+.flag-fln {background-position: -56px -0px;}
+.flag-mpla {background-position: -112px -0px;}
+.flag-unita {background-position: -140px -0px;}
+.flag-ndp {background-position: -112px -96px;}
+.flag-tagammu {background-position: -140px -96px;}
+.flag-asu {background-position: -112px -192px;}
+.flag-nfsl {background-position: -140px -192px;}
+
+
+/* Heads of State */
+.hos-algeria {background-position: -0px -0px;}
+.hos-angola {background-position: -64px -0px;}
+.hos-egypt {background-position: -320px -76px;}
+.hos-libya {background-position: -64px -228px;}
+
+
+/* Legislatures */
+.leg-algeria {background-position: -0px -0px;}
+.leg-angola {background-position: -200px -0px;}
+.leg-egypt {background-position: -1000px -70px;}
+.leg-libya {background-position: -200px -210px;}
