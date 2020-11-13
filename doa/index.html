@@ -6,389 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Destiny of Africa</title>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-	<style>
-		body {
-			font-family: 'Open Sans',Arial,sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-
-
-		/* Map */
-		#container-map {
-			display: inline-block;
-			background-color: #1d1d1d;
-			color: #fff;
-			overflow: hidden;
-			width: 80vw;
-			height: 100vh;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
-		#viewport {
-			width: 100%;
-			height: 100%;
-			overflow: hidden;
-		}
-		#viewport:active {
-			cursor: move;
-		}
-
-		.city {
-			display: block;
-			background-color: rgba(255, 0, 0, 0.4);
-			width: 16px;
-			height: 16px;
-			position: absolute;
-		}
-
-		.city-box {
-			display: none;
-			opacity: 0;
-			background-image: url(images/img_citybox.png);
-			width: 204px;
-			height: 126px;
-			position: absolute;
-			top: 20px;
-			left: -92px;
-		}
-
-		.city-box.active {
-			display: block;
-			opacity: 1;
-		}
-
-		.cityflag {
-			background-image: url(images/sprite_flags.png);
-			display: inline-block;
-			width: 28px;
-			height: 24px;
-			position: absolute;
-			top: 23px;
-			left: 13px;
-		}
-
-		.cityname {
-			display: inline-block;
-			color: #fff;
-			font-size: 15px;
-			font-weight: 600;
-			position: absolute;
-			top: 18px;
-			left: 51px;
-		}
-
-		.citycountry {
-			display: inline-block;
-			color: #afb1b8;
-			font-size: 11px;
-			font-weight: 400;
-			position: absolute;
-			top: 34px;
-			left: 51px;
-		}
-
-		.cityseats {
-			display: inline-block;
-			color: #62656f;
-			font-size: 30px;
-			font-weight: 100;
-			letter-spacing: -0.06em;
-			position: absolute;
-			top: 14px;
-			right: 15px;
-		}
-
-
-		/* Nations */
-		#container-nations {
-			display: inline-block;
-			background-color: #242424;
-			color: #fff;
-			width: 390px;
-			min-width: 390px;
-			height: 100vh;
-			position: absolute;
-			top: 0;
-			right: 0;
-			overflow-x: hidden;
-			overflow-y: scroll;
-		}
-
-		#container-nations::-webkit-scrollbar {
-			display: none;
-		}
-
-		#header, #nations {
-			width: 350px;
-			margin: 0 auto;
-		}
-
-		.logo {
-			background-image: url('images/logo_doa_small.png');
-			background-repeat: no-repeat;
-			width: 285px;
-			height: 156px;
-			margin: 40px auto 0;
-		}
-
-		.logo h1 {
-			display: none;
-		}
-
-		.about {
-			font-size: 12px;
-			text-align: justify;
-		}
-
-		.social {
-			width: 100%;
-			text-align: center;
-		}
-
-		.socialTwitter,.socialPatreon {
-			display: inline-block;
-			width: 32px;
-			height: 32px;
-			border: 0;
-			outline: none;
-		}
-
-		.socialTwitter {
-			background: url('images/icon_social_twitter.png') no-repeat center center;
-		}
-
-		.socialPatreon {
-			background: url('images/icon_social_patreon.png') no-repeat center center;
-		}
-
-		.nation {
-			display: block;
-			background-image: url(images/img_natbox.png);
-			background-repeat: no-repeat;
-			width: 350px;
-			height: 230px;
-			margin-bottom: 20px;
-			padding: 0;
-			position: relative;
-		}
-
-		.nation-title {
-			display: block;
-			width: 100%;
-			height: 46px;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			top: 3px;
-		}
-
-		.nationflag {
-			background-image: url(images/sprite_flags.png);
-			display: inline-block;
-			width: 28px;
-			height: 24px;
-			position: absolute;
-			top: 11px;
-			left: 13px;
-		}
-
-		.nationname {
-			display: inline-block;
-			color: #fff;
-			font-size: 20px;
-			font-weight: 400;
-			text-transform: uppercase;
-			height: 24px;
-			position: absolute;
-			top: 9px;
-			left: 52px;
-		}
-
-		.nationseats {
-			display: inline-block;
-			color: #62656f;
-			font-size: 30px;
-			font-weight: 100;
-			letter-spacing: -0.06em;
-			position: absolute;
-			top: 2px;
-			right: 13px;
-		}
-
-		.nation-president {
-			font-size: 12px;
-			line-height: 14px;
-			height: 96px;
-			position: relative;
-			top: 3px;
-		}
-
-		.hos {
-			background-image: url(images/sprite_headsofstate.png);
-			display: inline-block;
-			width: 64px;
-			height: 76px;
-			position: absolute;
-			top: 10px;
-			left: 13px;
-		}
-
-		.hosname {
-			position: absolute;
-			top: 10px;
-			left: 87px;
-		}
-
-		.nationelections {
-			width: 249px;
-			position: absolute;
-			top: 57px;
-			left: 87px;
-		}
-
-		.nationelections-text {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
-		.nationelections-date {
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-
-		.nationparties {
-			width: 249px;
-			position: absolute;
-			top: 73px;
-			left: 87px;
-		}
-
-		.nationparties-text {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
-		.nationparties-val {
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-
-		.nation-party {
-			display: block;
-			font-size: 12px;
-			width: 100%;
-			height: 46px;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			top: 3px;
-		}
-
-		.partyleft, .partyright {
-			width: 160px;
-			height: 70px;
-		}
-
-		.partyleft {
-			text-align: left;
-			position: absolute;
-			top: 14px;
-			left: 13px;
-		}
-
-		.partyright {
-			text-align: right;
-			position: absolute;
-			top: 14px;
-			right: 13px;
-		}
-
-		.partyflag {
-			display: inline-block;
-			background-image: url(images/sprite_flags.png);
-			width: 28px;
-			height: 24px;
-			position: absolute;
-			top: 0px;
-		}
-
-		.partyname {
-			display: inline-block;
-			font-weight: bold;
-			position: absolute;
-			top: 26px;
-		}
-
-		.partyplayer {
-			display: inline-block;
-			letter-spacing: -0.04em;
-			position: absolute;
-			top: 42px;
-		}
-
-		.partyleft .partyflag, .partyleft .partyname, .partyleft .partyplayer {
-			left: 0;
-		}
-
-		.partyright .partyflag, .partyright .partyname, .partyright .partyplayer {
-			right: 0;
-		}
-
-		.legislature {
-			display: block;
-			background-image: url(images/sprite_legislatures.png);
-			background-repeat: no-repeat;
-			width: 200px;
-			height: 70px;
-			position: absolute;
-			top: 8px;
-			left: 72px;
-		}
-
-		/* Party Colors */
-		.party-isl {color: #73a51d;}
-		.party-com {color: #ae1753;}
-		.party-soc {color: #d21940;}
-		.party-demsoc {color: #f61e1e;}
-		.party-socdem {color: #f05c0b;}
-		.party-pro {color: #f5971a;}
-		.party-lib {color: #ffbf00;}
-		.party-con {color: #73b6ef;}
-		.party-nat {color: #5c6bd5;}
-		.party-fas {color: #897c76;}
-		.party-chr {color: #be49c2;}
-
-		/* Nation Flags */
-		.flag-algeria {background-position: -0px -0px;}
-		.flag-angola {background-position: -84px -0px;}
-		.flag-nigeria {background-position: -84px -264px;}
-
-		/* Party Flags */
-		.flag-fis {background-position: -28px -0px;}
-		.flag-fln {background-position: -56px -0px;}
-		.flag-mpla {background-position: -112px -0px;}
-		.flag-unita {background-position: -140px -0px;}
-
-		/* Heads of State */
-		.hos-algeria {background-position: -0px -0px;}
-		.hos-angola {background-position: -64px -0px;}
-
-		/* Legislatures */
-		.leg-algeria {background-position: -0px -0px;}
-		.leg-angola {background-position: -200px -0px;}
-
-	</style>
+	<link href="style/main.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="script/jquery.mapbox.js"></script>
 	<script src="script/jquery.mousewheel.js"></script>
@@ -406,7 +24,7 @@
 						<div data-box="123" class="city" style="top: 1508px; left: 1530px;">
 							<div id="123" class="city-box">
 								<div class="cityflag flag-nigeria"></div>
-								<div class="cityname">Abuja</div>
+								<div class="cityname">Abuja⭐</div>
 								<div class="citycountry">Nigeria</div>
 								<div class="cityseats">7</div>
 							</div>
@@ -429,21 +47,21 @@
 
 	<div id="container-nations">
 		<div id="header">
-			<div class="logo">
-				<h1>Destiny of Africa</span>
-			</div>
-			<div class="about">
-				<p>
-					Lorem ipsum words go here. This page is still under construction. Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society. Now we see the violence inherent in the system.
-				</p>
-			</div>
-			<div class="social">
-				<a href="https://twitter.com/ExtraNoise" title="Follow ExtraNoise" target="_blank" class="socialTwitter"></a>
-				<a href="https://www.patreon.com/ExtraNoise" title="Become a Patron" target="_blank" class="socialPatreon"></a>
+			<div class="menu">
+				<a href="https://bit.ly/367Cyuy" title="Destiny of Africa Rules" target="_blank" class="btnAbout"></a>
+				<a href="https://discord.gg/3c73hVc" title="Join the Discord" target="_blank" class="btnDiscord"></a>
+				<a href="https://www.reddit.com/r/destinyofafrica/" title="Game Subreddit" target="_blank" class="btnReddit"></a>
+				<a href="https://twitter.com/ExtraNoise" title="Follow ExtraNoise" target="_blank" class="btnTwitter"></a>
+				<a href="https://www.patreon.com/ExtraNoise" title="Become a Patron" target="_blank" class="btnPatreon"></a>
 			</div>
 		</div>
+		<div id="index"></div>
 		<div id="nations">
-			<h3>List of Nations</h3>
+
+			<div class="turninfo">
+				<div class="turn-date">January 1992</div>
+				<div class="turn-turn">Turn I</div>
+			</div>
 
 			<div class="nation">
 				<div class="nation-title">
@@ -520,6 +138,80 @@
 				</div>
 			</div>
 
+			<div class="nation">
+				<div class="nation-title">
+					<div class="nationflag flag-egypt"></div>
+					<div class="nationname">Egypt</div>
+					<div class="nationseats">47</div>
+				</div>
+				<div class="nation-president">
+					<div class="hos hos-egypt"></div>
+					<div class="hosname party-fas">
+						President<br/>
+						<strong>Hosni Mubarak</strong><br/>
+						<strong>NDP</strong>
+					</div>
+					<div class="nationelections">
+						<div class="nationelections-text">Next Election</div>
+						<div class="nationelections-date">November 1993</div>
+					</div>
+					<div class="nationparties">
+						<div class="nationparties-text">Political Parties</div>
+						<div class="nationparties-val">Parties Allowed</div>
+					</div>
+				</div>
+				<div class="nation-party">
+					<div class="legislature leg-egypt"></div>
+					<div class="partyleft party-soc">
+						<div class="partyflag flag-tagammu"></div>
+						<div class="partyname">Tagammu</div>
+						<div class="partyplayer">testname</div>
+					</div>
+					<div class="partyright party-fas">
+						<div class="partyflag flag-ndp"></div>
+						<div class="partyname">NDP</div>
+						<div class="partyplayer"><em>Unclaimed</em></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nation">
+				<div class="nation-title">
+					<div class="nationflag flag-libya"></div>
+					<div class="nationname"><a href="" onclick="libya()">Libya</div>
+					<div class="nationseats">20</div>
+				</div>
+				<div class="nation-president">
+					<div class="hos hos-libya"></div>
+					<div class="hosname party-fas">
+						President<br/>
+						<strong>Muammar Gaddafi</strong><br/>
+						<strong>ASU</strong>
+					</div>
+					<div class="nationelections">
+						<div class="nationelections-text">Next Election</div>
+						<div class="nationelections-date -fraud">NO ELECTIONS</div>
+					</div>
+					<div class="nationparties">
+						<div class="nationparties-text">Political Parties</div>
+						<div class="nationparties-val -fraud">NO PARTIES</div>
+					</div>
+				</div>
+				<div class="nation-party">
+					<div class="legislature leg-libya"></div>
+					<div class="partyleft party-lib">
+						<div class="partyflag flag-nfsl"></div>
+						<div class="partyname">NFSL</div>
+						<div class="partyplayer">testname2</div>
+					</div>
+					<div class="partyright party-fas">
+						<div class="partyflag flag-asu"></div>
+						<div class="partyname">ASU</div>
+						<div class="partyplayer"><em>Unclaimed</em></div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -527,10 +219,14 @@
 		$(document).ready(function() { 
 			$("#viewport").mapbox({mousewheel: true}); 
 		}); 
+
+		function libya() {
+			$("#viewport").mapbox("center", {x: 2052, y: 618});
+		};
 	</script>
 
 	<script type="text/javascript"> 
-		$('div').on('click', function () {
+		$('div').on('click', function() {
 
 			var divID = $(this).attr('data-box');
 			$('#' + divID).addClass('active');
