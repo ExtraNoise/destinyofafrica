@@ -513,20 +513,14 @@ body {
 .flag-un {background-position: -112px -456px;}
 
 
-/* Party Flags */
-.flag-fis {background-position: -28px -0px;}
-.flag-fln {background-position: -56px -0px;}
-.flag-mpla {background-position: -112px -0px;}
-.flag-unita {background-position: -140px -0px;}
-.flag-ndp {background-position: -112px -96px;}
-.flag-tagammu {background-position: -140px -96px;}
-.flag-asu {background-position: -112px -192px;}
-.flag-nfsl {background-position: -140px -192px;}
-
-
 /* Heads of State */
 .hos-algeria {background-position: -0px -0px;}
 .hos-angola {background-position: -64px -0px;}
+.hos-benin {background-position: -128px -0px;}
+.hos-botswana {background-position: -192px -0px;}
+.hos-burkinafaso {background-position: -256px -0px;}
+.hos-burundi {background-position: -320px -0px;}
+
 .hos-egypt {background-position: -320px -76px;}
 .hos-libya {background-position: -64px -228px;}
 
@@ -534,5 +528,30 @@ body {
 /* Legislatures */
 .leg-algeria {background-position: -0px -0px;}
 .leg-angola {background-position: -200px -0px;}
+.leg-benin {background-position: -400px -0px;}
+.leg-botswana {background-position: -600px -0px;}
+.leg-burkinafaso {background-position: -800px -0px;}
+.leg-burundi {background-position: -1000px -0px;}
+
 .leg-egypt {background-position: -1000px -70px;}
 .leg-libya {background-position: -200px -210px;}
+
+
+/* Party Flags */
+.flag-FIS {background-position: -28px -0px;}
+.flag-FLN {background-position: -56px -0px;}
+.flag-MPLA {background-position: -112px -0px;}
+.flag-UNITA {background-position: -140px -0px;}
+.flag-PRD {background-position: -196px -0px;}
+.flag-UTRD {background-position: -224px -0px;}
+.flag-BNF {background-position: -28px -24px;}
+.flag-BDP {background-position: -56px -24px;}
+.flag-ODP {background-position: -112px -24px;}
+.flag-CNPP {background-position: -140px -24px;}
+.flag-FRODEBU {background-position: -196px -24px;}
+.flag-UPRONA {background-position: -224px -24px;}
+
+.flag-NDP {background-position: -112px -96px;}
+.flag-Tagammu {background-position: -140px -96px;}
+.flag-ASU {background-position: -112px -192px;}
+.flag-NFSL {background-position: -140px -192px;}
