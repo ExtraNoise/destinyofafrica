@@ -520,6 +520,10 @@ body {
 .hos-botswana {background-position: -192px -0px;}
 .hos-burkinafaso {background-position: -256px -0px;}
 .hos-burundi {background-position: -320px -0px;}
+.hos-cameroon {background-position: -384px -0px;}
+.hos-capeverde {background-position: -448px -0px;}
+.hos-car {background-position: -0px -76px;}
+.hos-chad {background-position: -64px -76px;}
 
 .hos-egypt {background-position: -320px -76px;}
 .hos-libya {background-position: -64px -228px;}
@@ -532,6 +536,10 @@ body {
 .leg-botswana {background-position: -600px -0px;}
 .leg-burkinafaso {background-position: -800px -0px;}
 .leg-burundi {background-position: -1000px -0px;}
+.leg-cameroon {background-position: -1200px -0px;}
+.leg-capeverde {background-position: -1400px -0px;}
+.leg-car {background-position: -0px -70px;}
+.leg-chad {background-position: -200px -70px;}
 
 .leg-egypt {background-position: -1000px -70px;}
 .leg-libya {background-position: -200px -210px;}
@@ -550,6 +558,14 @@ body {
 .flag-CNPP {background-position: -140px -24px;}
 .flag-FRODEBU {background-position: -196px -24px;}
 .flag-UPRONA {background-position: -224px -24px;}
+.flag-UNDP {background-position: -28px -48px;}
+.flag-RDPC {background-position: -56px -48px;}
+.flag-PAICV {background-position: -112px -48px;}
+.flag-MpD {background-position: -140px -48px;}
+.flag-MLPC {background-position: -196px -48px;}
+.flag-RDC {background-position: -224px -48px;}
+.flag-URD {background-position: -28px -72px;}
+.flag-MPS {background-position: -56px -72px;}
 
 .flag-NDP {background-position: -112px -96px;}
 .flag-Tagammu {background-position: -140px -96px;}
