@@ -467,6 +467,7 @@ body {
 .flag-chad {background-position: -0px -72px;}
 .flag-comoros {background-position: -84px -72px;}
 .flag-congo {background-position: -168px -72px;}
+.flag-cotedivoire {background-position: -0px -168px;}
 .flag-djibouti {background-position: -0px -96px;}
 .flag-egypt {background-position: -84px -96px;}
 .flag-eqguinea {background-position: -168px -96px;}
@@ -476,7 +477,6 @@ body {
 .flag-ghana {background-position: -0px -144px;}
 .flag-guinea {background-position: -84px -144px;}
 .flag-guineabissau {background-position: -168px -144px;}
-.flag-ivorycoast {background-position: -0px -168px;}
 .flag-kenya {background-position: -84px -168px;}
 .flag-lesotho {background-position: -168px -168px;}
 .flag-liberia {background-position: -0px -192px;}
@@ -524,8 +524,17 @@ body {
 .hos-capeverde {background-position: -448px -0px;}
 .hos-car {background-position: -0px -76px;}
 .hos-chad {background-position: -64px -76px;}
-
+.hos-comoros {background-position: -128px -76px;}
+.hos-congo {background-position: -192px -76px;}
+.hos-cotedivoire {background-position: -320px -152px;}
+.hos-djibouti {background-position: -256px -76px;}
 .hos-egypt {background-position: -320px -76px;}
+.hos-eqguinea {background-position: -384px -76px;}
+.hos-ethiopia {background-position: -448px -76px;}
+.hos-gabon {background-position: -0px -152px;}
+.hos-gambia {background-position: -64px -152px;}
+.hos-ghana {background-position: -128px -152px;}
+
 .hos-libya {background-position: -64px -228px;}
 
 
@@ -540,8 +549,17 @@ body {
 .leg-capeverde {background-position: -1400px -0px;}
 .leg-car {background-position: -0px -70px;}
 .leg-chad {background-position: -200px -70px;}
-
+.leg-comoros {background-position: -400px -70px;}
+.leg-congo {background-position: -600px -70px;}
+.leg-cotedivoire {background-position: -1000px -140px;}
+.leg-djibouti {background-position: -800px -70px;}
 .leg-egypt {background-position: -1000px -70px;}
+.leg-eqguinea {background-position: -1200px -70px;}
+.leg-ethiopia {background-position: -1400px -70px;}
+.leg-gabon {background-position: -0px -140px;}
+.leg-gambia {background-position: -200px -140px;}
+.leg-ghana {background-position: -400px -140px;}
+
 .leg-libya {background-position: -200px -210px;}
 
 
@@ -566,8 +584,26 @@ body {
 .flag-RDC {background-position: -224px -48px;}
 .flag-URD {background-position: -28px -72px;}
 .flag-MPS {background-position: -56px -72px;}
-
+.flag-MDP {background-position: -112px -72px;}
+.flag-UDD {background-position: -140px -72px;}
+.flag-PCT {background-position: -196px -72px;}
+.flag-UPADS {background-position: -224px -72px;}
+.flag-FPI {background-position: -28px -168px;}
+.flag-PDCI-RDA {background-position: -56px -168px;}
+.flag-FRUD {background-position: -28px -96px;}
+.flag-RPP {background-position: -56px -96px;}
 .flag-NDP {background-position: -112px -96px;}
 .flag-Tagammu {background-position: -140px -96px;}
+.flag-PDGE {background-position: -196px -96px;}
+.flag-PPGE {background-position: -224px -96px;}
+.flag-EPRDF {background-position: -28px -120px;}
+.flag-PFDJ {background-position: -56px -120px;}
+.flag-PDG {background-position: -112px -120px;}
+.flag-PGP {background-position: -140px -120px;}
+.flag-NCP {background-position: -196px -120px;}
+.flag-PPP {background-position: -224px -120px;}
+.flag-NCP {background-position: -28px -144px;}
+.flag-NDC {background-position: -56px -144px;}
+
 .flag-ASU {background-position: -112px -192px;}
 .flag-NFSL {background-position: -140px -192px;}
