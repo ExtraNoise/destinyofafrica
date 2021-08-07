@@ -266,12 +266,12 @@ body {
 .nationname {
 	display: inline-block;
 	color: #fff;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
 	height: 24px;
 	position: absolute;
-	top: 9px;
+	top: 10px;
 	left: 52px;
 }
 
@@ -319,7 +319,8 @@ body {
 .nationelections {
 	width: 220px;
 	position: absolute;
-	top: 57px;
+	/* top: 57px; original before removal of parties */
+	top:  73px;
 	left: 87px;
 }
 
@@ -534,8 +535,37 @@ body {
 .hos-gabon {background-position: -0px -152px;}
 .hos-gambia {background-position: -64px -152px;}
 .hos-ghana {background-position: -128px -152px;}
-
+.hos-guinea {background-position: -192px -152px;}
+.hos-guineabissau {background-position: -256px -152px;}
+.hos-kenya {background-position: -384px -152px;}
+.hos-lesotho {background-position: -448px -152px;}
+.hos-liberia {background-position: -0px -228px;}
 .hos-libya {background-position: -64px -228px;}
+.hos-madagascar {background-position: -128px -228px;}
+.hos-malawi {background-position: -192px -228px;}
+.hos-mali {background-position: -256px -228px;}
+.hos-mauritania {background-position: -320px -228px;}
+.hos-morocco {background-position: -384px -228px;}
+.hos-mozambique {background-position: -448px -228px;}
+.hos-namibia {background-position: -0px -304px;}
+.hos-niger {background-position: -64px -304px;}
+.hos-nigeria {background-position: -128px -304px;}
+.hos-rwanda {background-position: -192px -304px;}
+.hos-sahrawi {background-position: -256px -304px;}
+.hos-saotome {background-position: -320px -304px;}
+.hos-senegal {background-position: -384px -304px;}
+.hos-sierraleone {background-position: -448px -304px;}
+.hos-somalia {background-position: -0px -380px;}
+.hos-southafrica {background-position: -64px -380px;}
+.hos-sudan {background-position: -128px -380px;}
+.hos-swaziland {background-position: -192px -380px;}
+.hos-tanzania {background-position: -256px -380px;}
+.hos-togo {background-position: -320px -380px;}
+.hos-tunisia {background-position: -384px -380px;}
+.hos-uganda {background-position: -448px -380px;}
+.hos-zaire {background-position: -0px -456px;}
+.hos-zambia {background-position: -64px -456px;}
+.hos-zimbabwe {background-position: -128px -456px;}
 
 
 /* Legislatures */
@@ -559,8 +589,37 @@ body {
 .leg-gabon {background-position: -0px -140px;}
 .leg-gambia {background-position: -200px -140px;}
 .leg-ghana {background-position: -400px -140px;}
-
+.leg-guinea {background-position: -600px -140px;}
+.leg-guineabissau {background-position: -800px -140px;}
+.leg-kenya {background-position: -1200px -140px;}
+.leg-lesotho {background-position: -1400px -140px;}
+.leg-liberia {background-position: -0px -210px;}
 .leg-libya {background-position: -200px -210px;}
+.leg-madagascar {background-position: -400px -210px;}
+.leg-malawi {background-position: -600px -210px;}
+.leg-mali {background-position: -800px -210px;}
+.leg-mauritania {background-position: -1000px -210px;}
+.leg-morocco {background-position: -1200px -210px;}
+.leg-mozambique {background-position: -1400px -210px;}
+.leg-namibia {background-position: -0px -280px;}
+.leg-niger {background-position: -200px -280px;}
+.leg-nigeria {background-position: -400px -280px;}
+.leg-rwanda {background-position: -600px -280px;}
+.leg-sahrawi {background-position: -800px -280px;}
+.leg-saotome {background-position: -1000px -280px;}
+.leg-senegal {background-position: -1200px -280px;}
+.leg-sierraleone {background-position: -1400px -280px;}
+.leg-somalia {background-position: -0px -350px;}
+.leg-southafrica {background-position: -200px -350px;}
+.leg-sudan {background-position: -400px -350px;}
+.leg-swaziland {background-position: -600px -350px;}
+.leg-tanzania {background-position: -800px -350px;}
+.leg-togo {background-position: -1000px -350px;}
+.leg-tunisia {background-position: -1200px -350px;}
+.leg-uganda {background-position: -1400px -350px;}
+.leg-zaire {background-position: -0px -420px;}
+.leg-zambia {background-position: -200px -420px;}
+.leg-zimbabwe {background-position: -400px -420px;}
 
 
 /* Party Flags */
@@ -604,6 +663,65 @@ body {
 .flag-PPP {background-position: -224px -120px;}
 .flag-NCP {background-position: -28px -144px;}
 .flag-NDC {background-position: -56px -144px;}
-
+.flag-PUP {background-position: -112px -144px;}
+.flag-RPG {background-position: -140px -144px;}
+.flag-PAIGC {background-position: -196px -144px;}
+.flag-PRS {background-position: -224px -144px;}
+.flag-FORD {background-position: -112px -168px;}
+.flag-KANU {background-position: -140px -168px;}
+.flag-BCP {background-position: -196px -168px;}
+.flag-BNP {background-position: -224px -168px;}
+.flag-LPP {background-position: -28px -192px;}
+.flag-NPFL {background-position: -56px -192px;}
 .flag-ASU {background-position: -112px -192px;}
 .flag-NFSL {background-position: -140px -192px;}
+.flag-AREMA {background-position: -196px -192px;}
+.flag-UNDD {background-position: -224px -192px;}
+.flag-MCP {background-position: -28px -216px;}
+.flag-UDF {background-position: -56px -216px;}
+.flag-ADEMA {background-position: -112px -216px;}
+.flag-RIPM {background-position: -140px -216px;}
+.flag-PRDS {background-position: -196px -216px;}
+.flag-RDU {background-position: -224px -216px;}
+.flag-UC {background-position: -28px -240px;}
+.flag-USFP {background-position: -56px -240px;}
+.flag-FRELIMO {background-position: -112px -240px;}
+.flag-RENAMO {background-position: -140px -240px;}
+.flag-DTA {background-position: -196px -240px;}
+.flag-SWAPO {background-position: -224px -240px;}
+.flag-CDS {background-position: -28px -264px;}
+.flag-MNSD {background-position: -56px -264px;}
+.flag-NRC {background-position: -112px -264px;}
+.flag-SDP {background-position: -140px -264px;}
+.flag-FPR {background-position: -196px -264px;}
+.flag-MRND {background-position: -224px -264px;}
+.flag-POLISARIO {background-position: -28px -288px;}
+.flag-UGT {background-position: -56px -288px;}
+.flag-MLSTPPSD {background-position: -112px -288px;}
+.flag-PCD {background-position: -140px -288px;}
+.flag-PDS {background-position: -196px -288px;}
+.flag-PS {background-position: -224px -288px;}
+.flag-APC {background-position: -28px -312px;}
+.flag-RUF {background-position: -56px -312px;}
+.flag-SNF {background-position: -112px -312px;}
+.flag-USC {background-position: -140px -312px;}
+.flag-ANC {background-position: -196px -312px;}
+.flag-NP {background-position: -224px -312px;}
+.flag-DUP {background-position: -28px -336px;}
+.flag-NIF {background-position: -56px -336px;}
+.flag-NNLC {background-position: -112px -336px;}
+.flag-PUDEMO {background-position: -140px -336px;}
+.flag-CCM {background-position: -196px -336px;}
+.flag-NCCR-M {background-position: -224px -336px;}
+.flag-CAR {background-position: -28px -360px;}
+.flag-RPT {background-position: -56px -360px;}
+.flag-MDS {background-position: -112px -360px;}
+.flag-RDC {background-position: -140px -360px;}
+.flag-FIC {background-position: -196px -360px;}
+.flag-NRM {background-position: -224px -360px;}
+.flag-MLC {background-position: -28px -384px;}
+.flag-MPR {background-position: -56px -384px;}
+.flag-MMD {background-position: -112px -384px;}
+.flag-UNIP {background-position: -140px -384px;}
+.flag-ZANU-PF {background-position: -196px -384px;}
+.flag-ZUM {background-position: -224px -384px;}
