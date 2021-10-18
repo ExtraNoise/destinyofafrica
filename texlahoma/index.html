@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Texlahoma</title>
+	<link href="style/main.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="script/jquery.mapbox.js"></script>
+	<script src="script/jquery.mousewheel.js"></script>
+</head>
+<body>
+
+	<div id="container-map">
+		<div id="viewport">
+			<div style="background: url(images/map.png) no-repeat; width:7200px; height:6280px;" class="map-layer"> 
+				<img src="images/map.png" alt="" />
+				<div class="mapcontent">
+					<div id="cities">
+
+					</div>
+				</div> 
+			</div> 
+		</div>
+	</div>
+
+	<div id="container-nations">
+		<!-- <div id="header">
+			<div class="menu">
+				<a href="https://bit.ly/367Cyuy" title="Destiny of Africa Rules" target="_blank" class="btnAbout"></a>
+				<a href="https://discord.gg/3c73hVc" title="Join the Discord" target="_blank" class="btnDiscord"></a>
+				<a href="https://www.reddit.com/r/destinyofafrica/" title="Game Subreddit" target="_blank" class="btnReddit"></a>
+				<a href="https://twitter.com/ExtraNoise" title="Follow ExtraNoise" target="_blank" class="btnTwitter"></a>
+				<a href="https://www.patreon.com/ExtraNoise" title="Become a Patron" target="_blank" class="btnPatreon"></a>
+			</div>
+		</div> -->
+		<div id="index"></div>
+		<div id="nations">
+
+			<!-- <div class="turninfo">
+				<div class="turn-date">January 1992</div>
+				<div class="turn-turn">Turn I</div>
+			</div> -->
+
+			parties go here
+
+		</div>
+	</div>
+
+	<script type="text/javascript"> 
+		$(document).ready(function() { 
+			$("#viewport").mapbox({mousewheel: true}); 
+		}); 
+	</script>
+
+	<script type="text/javascript"> 
+		$('div').on('click', function() {
+
+			var divID = $(this).attr('data-box');
+			$('#' + divID).addClass('active');
+
+			/* original - working
+			var divID = $(this).attr('data-box');
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#' + divID).addClass('active').siblings().removeClass('active');
+			*/
+		}); 
+	</script>
+
+	<script>
+		/* lets come back to this later 
+		fetch('script/cities.json')
+			.then(function (response) {
+				return response.json();
+			})
+			.then(function (data) {
+				appendData(data);
+			})
+			.catch(function (err) {
+				console.log('error: ' + err);
+			});
+		function appendData(data) {
+			var mainContainer = document.getElementById("cities");
+			for (var i = 0; i < data.length; i++) {
+				var div = document.createElement("div");
+				div.className = ('city');
+				div.style = 'position:absolute; top:' + (data[i].yloc - 8) + 'px; left:' + (data[i].xloc - 8) + 'px; background-color:rgba(255,0,0,0.4)';
+				div.innerHTML = data[i].city + ', ' + data[i].country;
+				mainContainer.appendChild(div);
+			}
+		}
+		*/
+	</script>
+
+</body>
+</html>

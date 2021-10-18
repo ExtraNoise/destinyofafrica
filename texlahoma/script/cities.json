@@ -1,0 +1,23 @@
+[
+	{
+		"id":"1",
+		"city":"Algiers",
+		"country":"Algeria",
+		"xloc":"1350",
+		"yloc":"106"
+	},
+	{
+		"id":"2",
+		"city":"Oran",
+		"country":"Algeria",
+		"xloc":"1189",
+		"yloc":"161"
+	},
+	{
+		"id":"3",
+		"city":"Constantine",
+		"country":"Algeria",
+		"xloc":"1541",
+		"yloc":"110"
+	}
+]
