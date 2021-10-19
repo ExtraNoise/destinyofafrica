@@ -1,0 +1,32 @@
+[
+	{
+		"id":"1",
+		"name":"Houston",
+		"xloc":"6002",
+		"yloc":"4060"
+	},
+	{
+		"id":"2",
+		"name":"San Antonio",
+		"xloc":"4734",
+		"yloc":"4256"
+	},
+	{
+		"id":"3",
+		"name":"Dallas",
+		"xloc":"5373",
+		"yloc":"2639"
+	},
+	{
+		"id":"4",
+		"name":"Austin",
+		"xloc":"5046",
+		"yloc":"3831"
+	},
+	{
+		"id":"5",
+		"name":"Fort Worth",
+		"xloc":"5171",
+		"yloc":"2662"
+	},
+]

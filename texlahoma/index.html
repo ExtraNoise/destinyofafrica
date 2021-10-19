@@ -19,6 +19,8 @@
 				<div class="mapcontent">
 					<div id="cities">
 
+
+
 					</div>
 				</div> 
 			</div> 
@@ -48,49 +50,29 @@
 		</div>
 	</div>
 
-	<script type="text/javascript"> 
+	<script type="text/javascript">
 		$(document).ready(function() { 
 			$("#viewport").mapbox({mousewheel: true}); 
 		}); 
 	</script>
 
-	<script type="text/javascript"> 
-		$('div').on('click', function() {
+	<script type="text/javascript">
+		$(document).ready(function() {
 
-			var divID = $(this).attr('data-box');
-			$('#' + divID).addClass('active');
+			$.getJSON("cities.json",
+				function(data) {
+					var city = '';
 
-			/* original - working
-			var divID = $(this).attr('data-box');
-			$(this).addClass('active').siblings().removeClass('active');
-			$('#' + divID).addClass('active').siblings().removeClass('active');
-			*/
-		}); 
-	</script>
+					$.each(data, function(key, value) {
 
-	<script>
-		/* lets come back to this later 
-		fetch('script/cities.json')
-			.then(function (response) {
-				return response.json();
-			})
-			.then(function (data) {
-				appendData(data);
-			})
-			.catch(function (err) {
-				console.log('error: ' + err);
-			});
-		function appendData(data) {
-			var mainContainer = document.getElementById("cities");
-			for (var i = 0; i < data.length; i++) {
-				var div = document.createElement("div");
-				div.className = ('city');
-				div.style = 'position:absolute; top:' + (data[i].yloc - 8) + 'px; left:' + (data[i].xloc - 8) + 'px; background-color:rgba(255,0,0,0.4)';
-				div.innerHTML = data[i].city + ', ' + data[i].country;
-				mainContainer.appendChild(div);
-			}
-		}
-		*/
+						city += '<div>' + value.name + '</div>';
+
+					});
+
+					$('#cities').append(city);
+				});
+
+		});
 	</script>
 
 </body>
