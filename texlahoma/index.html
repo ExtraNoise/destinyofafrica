@@ -20,7 +20,7 @@
 				<div class="mapcontent">
 					<div id="cities">
 
-
+						<!-- cities should appear here -->
 
 					</div>
 				</div> 
@@ -31,18 +31,14 @@
 	<div id="container-nations">
 		<!-- <div id="header">
 			<div class="menu">
-				<a href="https://bit.ly/367Cyuy" title="Destiny of Africa Rules" target="_blank" class="btnAbout"></a>
-				<a href="https://discord.gg/3c73hVc" title="Join the Discord" target="_blank" class="btnDiscord"></a>
-				<a href="https://www.reddit.com/r/destinyofafrica/" title="Game Subreddit" target="_blank" class="btnReddit"></a>
-				<a href="https://twitter.com/ExtraNoise" title="Follow ExtraNoise" target="_blank" class="btnTwitter"></a>
-				<a href="https://www.patreon.com/ExtraNoise" title="Become a Patron" target="_blank" class="btnPatreon"></a>
+
 			</div>
 		</div> -->
 		<div id="index"></div>
 		<div id="nations">
 
 			<!-- <div class="turninfo">
-				<div class="turn-date">January 1992</div>
+				<div class="turn-date">January 2036</div>
 				<div class="turn-turn">Turn I</div>
 			</div> -->
 
@@ -59,20 +55,17 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$.getJSON("cities.json", function(data) {
+				var city = '';
 
-			$.getJSON("cities.json",
-				function(data) {
-					var city = '';
+				$.each(data, function(key, value) {
 
-					$.each(data, function(key, value) {
+					city += '<div>' + value.name + '</div>';
 
-						city += '<div>' + value.name + '</div>';
-
-					});
-
-					$('#cities').append(city);
 				});
 
+				$('#cities').append(city);
+			});
 		});
 	</script>
 
