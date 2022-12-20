@@ -1,0 +1,150 @@
+Make,Model,Trim,Year,Image,Type,Generation, Retail Price , Price Adjusted , Current Price ,Units Sold,Layout,CCs,Engine,Induction,Powertrain,C/R,Power (HP),Power (RPM),Torque (lb-ft),Torque (RPM),Gearbox,Gear Ratios,MPG City,MPG Highway,MPG Combined,Tank Cap.,Top Speed,0-60,¼ Time,@ Speed,Length,Width,Height,Curb Weight
+Ford,Mustang,,1965,,Muscle Car,I," $ 2,461 "," $ 23,283 ",,,FR,2781,Thriftpower 170,Natural,I6,,105,4600,140,3200,4M; 3A,,18,22,21,16.1,93,13.1,19.1,,181.6,68.2,51.2,"2,445"
+Austin-Healey,3000,Mark III BJ8,1966,,Sports Car,," $ 3,565 "," $ 32,791 ",,,,,,Natural,,,150,,,,,,,,,,,,,,,,,
+Chevrolet,Chevelle,SS (396),1967,,Muscle Car,," $ 2,825 "," $ 25,206 ",,,,,,Natural,,,325,,355,,5M,,,,,,,,,,,,,
+Ford,Mustang,GT500,1967,,Muscle Car,," $ 4,195 "," $ 37,429 ",,,,,,Natural,,,355,,420,,,,,,,,,,,,,,,
+Dodge,Charger,R/T,1968,,Muscle Car,II," $ 4,600 "," $ 39,392 ",,,FR,7200,440 RB,Natural,V8,,375,4600,480,3200,4M,,,,,,,,,,208.0,76.7,53.2,
+Datsun,510,,1969,,Compact Coupe,," $ 2,169 "," $ 17,612 ",,,FR,1600,L16,Natural,I4,,96,5600,100,3600,,,,,,,100,,,,163.0,64.4,56.0,"2,127"
+Datsun,240Z,,1970,,Sport Compact Coupe,," $ 3,526 "," $ 27,082 ",,,,2400,L24,Natural,I6,,151,5600,146,4400,4M,,,,,,,,,,163.0,64.2,50.5,"2,302"
+Pontiac,GTO,,1970,,Muscle Car,," $ 3,267 "," $ 25,092 ",,,,,,,,,,,,,,,,,,,,,,,,,,
+Porsche,914,,1970,,Sport Compact Coupe,I," $ 5,999 "," $ 46,076 "," $ 63,800 ",,RMR,1991,Type 901/36 F6,Aircooled,F6,8.6,109,5800,118,4200,5M; 4SA,,,,,,129,8.5,,,156.9,65.0,48.0,"2,172"
+Honda,Z600,,1971,,Sport Compact Hatch,I," $ 1,522 "," $ 11,199 ",,,FF,598,598 cc,Natural,I2,,36,9000,,,4M; 2A,,,,,,,,,,123.0,51.0,50.4,
+Toyota,Corona,1900,1972,,Compact Coupe,IV," $ 2,532 "," $ 18,051 ",,,FR,1858,8R-C,Natural,I4,9.0,109,5500,128,3600,4M; 3A,,,,,,,,,,164.2,61.8,55.1,"2,083"
+BMW,2002,tii,1973,,Compact Coupe,," $ 5,233 "," $ 35,123 ",,,,2000,,Natural,,,128,,,,5M,,,,,,115,,,,,,,
+Chevrolet,Camaro,Z28,1973,,Muscle Car,II," $ 3,713 "," $ 24,921 ",,,,5700,,Natural,V8,,245,,,,,,,,,,,,,,,,,
+Datsun,260Z,,1974,,Sport Compact Coupe,," $ 6,164 "," $ 37,260 ",,,,2600,L26,Natural,I6,,140,5600,157,4400,4M; 3A,,,,,,,,,,163.0,64.0,50.6,"2,425"
+Datsun,280Z,,1977,,Sport Compact Coupe,," $ 7,429 "," $ 36,533 ",,,,2800,L28E,Natural,I6,,149,,177,,4M; 3A,,,,,,,,,,173.2,64.2,,"2,875"
+Ford,Fiesta,,1978,,Compact Hatch,I," $ 4,141 "," $ 18,927 "," $ 1,275 ",,FF,1596,,,,,,,,,,,,,,,,,,,,,,
+Honda,Prelude,,1980,,Sport Compact Coupe,I," $ 6,895 "," $ 24,936 "," $ 2,750 ",,FF,1751,EK CVCC,Natural,I4,,72,4500,94,3000,5M; 3A,,,,,,,,,,161.0,64.4,50.8,"1,984"
+Datsun,280ZX,Turbo,1981,,Sport Compact Coupe,," $ 11,299 "," $ 37,043 ",,,,2800,L28ET,Turbo,I6,,180,5600,203,2800,5M,,,,,,,,,,174.0,66.5,51.0,"2,824"
+Toyota,Celica,Supra,1982,,Sport Compact Coupe,II," $ 14,598 "," $ 45,081 ",,,FR,2800,5M-GE DOHC,Natural,I6,,145,5600,155,4600,5M; 4A,,18,31,23,15.9,131,9.8,,,183.5,67.7,52.0,"2,789"
+Buick,Grand National,,1984,,Muscle Car,II," $ 14,349 "," $ 41,156 ",,,,3800,,Turbo,V6,,200,4400,300,2400,,,,,,,,,,,200.6,71.6,54.5,
+Honda,Civic,CRX,1984,,Sport Compact Coupe,I," $ 6,592 "," $ 18,907 ",,,FF,1488,D15A2,Natural,I4,9.6,78,6000,73,3500,5M; 3A,,,,38,,,,,,144.7,64.0,50.8,"1,819"
+Honda,Prelude,,1984,,Sport Compact Coupe,II," $ 9,987 "," $ 28,645 "," $ 3,125 ",,FF,1829,ET,Natural,I4,,100,5500,104,4000,5M; 4A,,,,,,,,,,172.2,66.5,51.0,"2,023"
+Nissan,300ZX,,1984,,Sport Compact Coupe,," $ 18,199 "," $ 52,199 "," $ 21,000 ",,,,,,,,,,,,,,,,,,,,,,,,,
+Pontiac,Fiero,,1984,,Sport Compact Coupe,," $ 7,679 "," $ 22,025 ",,,,,,,,,,,,,,,,,,,,,,,,,,
+Chevrolet,Camaro,IROC-Z,1985,,Muscle Car,III," $ 11,739 "," $ 32,512 ",,,,5000,TPI LB9,Natural,V8,,215,,,,5M,,,,,,,,,,192.0,72.8,50.2,"3,362"
+Mazda,RX-7,GSL-SE,1985,,Sport Compact Coupe,I," $ 15,645 "," $ 43,330 ",,,,1308,13B RE-EGI,Natural,Rotary,,135,,133,,,,,,,,,8.3,,,168.7,65.9,49.6,"2,400"
+Toyota,MR2,,1985,,Sport Compact Coupe,I," $ 10,999 "," $ 30,463 ",,,RMR,1587,4A-GE DOHC,Natural,I4,,122,6600,104,5000,5M; 4A,,30,34,32,10.8,124,8.7,16.7,,154.3,65.4,49.2,"2,150"
+Volkswagen,Golf,GTI,1985,,Sport Compact Hatch,II," $ 8,990 "," $ 24,898 ",,,FF,1800,EA827 K-Jetronic,Natural,I4,,110,5500,115,3100,5M,,26,32,29,14.5,118,9.8,,,156.9,66.1,55.3,"2,000"
+Chevrolet,Cavalier,Z24,1986,,Sport Compact Hatch,I," $ 8,878 "," $ 24,140 "," $ 2,125 ","25,776",FF,2837,LB6 MPFI OHV,Natural,V6,9.6,130,,,,5M; 3A,,,,,,,,,,173.5,66.0,52.0,"2,558"
+Mazda,RX-7,Turbo,1986,,Sport Compact Coupe,II," $ 5,400 "," $ 14,683 ",,,FR,-,13B-DEI,Natural,Rotary,,146,,,,5M,,,,,,,,,,168.9,66.5,49.8,"2,696"
+Toyota,Corolla,Sport GT-S,1986,,Sport Compact Coupe,V," $ 10,688 "," $ 29,061 ",,,FR,1600,4A-GE,Natural,I4,,112,6600,97,4800,5M,,,43,32,,,,,,,,,
+Acura,Integra,,1987,https://i.imgur.com/c8EyUvA.jpg,Sport Compact Coupe,I," $ 11,298 "," $ 29,638 ", - ,"54,757",FF,1600,D16A1,Natural,I4,,113,6250,99,5500,5M; 4A,,,,,,,9.3,,,168.7,65.6,50.8,"2,357"
+Audi,Coupe,Quattro,1987,,Sport Compact Coupe,I,,," $ 62,500 ","1,200",F4,2226,KV,Natural,I5,10.0,134,5700,137,3500,5M,,22,39,29,,126,8.4,,,174.1,66.2,54.2,"2,646"
+Honda,Civic,Si,1987,,Sport Compact Hatch,III," $ 6,479 "," $ 16,996 ",,,FF,1500,EW3 SOHC,Natural,I4,,91,5500,93,4500,5M; 4A,,30,33,31,11.9,111,10.5,,,150.0,63.9,52.6,
+Mazda,323,GT-X,1987,,Sport Compact Hatch,VI," $ 13,000 "," $ 34,103 ",,,F4,1597,B6T DOHC,Turbo,I4,,132,,136,,5M,,,,,,,,,,161.8,64.8,54.7,"2,064"
+BMW,M3,(E30),1988,,Sports Car,I," $ 34,810 "," $ 87,690 ",,,,,,,,,192,6750,170,4750,5M,,,,,,,,,,,,,
+Honda,Prelude,2.0Si,1988,,Sport Compact Coupe,III," $ 18,344 "," $ 46,210 ",,,FF,1958,B20A5 DOHC,Natural,I4,,135,6200,127,4000,5M; 4A,,,,,,,,,,175.6,67.3,51.0,"2,954"
+Chrysler,Conquest,TSI,1988,,Sports Car,I," $ 18,155 "," $ 45,734 "," $ 2,775 ",,FR,2600,G54B,Turbo,,,,,,,,,,,,,,,,,173.2,68.3,50.2,"2,950"
+Nissan,180SX,,1989,,Sport Compact Coupe,I," $ 15,045 "," $ 36,157 ",,,FR,1800,CA18DET,Turbo,I4,,166,,168,,5M; 4A,,,,21.7,,136,6.6,,,178.7,66.5,,"2,579"
+Suzuki,Swift,GTi,1989,,,," $ 8,995 "," $ 21,617 ",,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,MR2,Super Charger,1989,,Sport Compact Coupe,I," $ 20,435 "," $ 49,111 ",,,RMR,,4A-GZE,Super,I4,8.0,145,6400,137,4400,5M,,,,,,,6.5,,,154.3,65.4,49.2,"2,494"
+Honda,CR-X,Si,1990,,Sport Compact Coupe,II," $ 11,130 "," $ 25,377 ",,"13,876",FF,1600,D16A6,Natural,I4,9.1,108,5600,100,4800,5M,,,,,,,,,,148.0,65.9,50.1,"2,174"
+Mazda,MX-5 Miata,(NA),1990,,Sports Car,I," $ 14,999 "," $ 34,199 ",,,FR,1598,B6ZE(RS) DOHC,Natural,I4,,115,6500,100,5500,6M,,,,,,,,,,155.5,65.9,48.4,"2,120"
+Ford,Probe,GT,1991,,Sport Compact Coupe,I," $ 14,964 "," $ 32,741 ",,,FF,2184,F2T,Turbo,I4,7.8,145,4300,190,3500,5M; 4A,,,,21,15.1,131,7.0,15.3,90.0,177.0,68.3,52.0,
+Isuzu,Impulse,RS,1991,,,," $ 14,849 "," $ 32,490 ",,,,,,,,,,,,,,,,,,,,,,,,,,
+Mitsubishi,Eclipse,GS,1991,,Sport Compact Coupe,I," $ 11,889 "," $ 26,013 ",,,FF,2000,Sirius 4G63 DOHC,Natural,I4,,135,,,,5M; 4A,,,,,,,,,,172.8,66.7,51.4,"2,524"
+Dodge,Stealth,RT,1991,,Sports Car,I," $ 29,595 "," $ 64,755 ",,,FF,3000,DOHC,Natural,V6,,222,6000,201,4500,5M; 4A,,,,,,,,,,,,,
+Nissan,NX2000,,1991,,,," $ 13,680 "," $ 29,932 ",,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,MR2,,1991,,Sport Compact Coupe,II," $ 18,575 "," $ 40,642 ",,,RMR,2200,5S-FE DOHC,Natural,I4,,130,,,,5M; 4A,,,,,,,,,,164.2,66.9,48.6,"2,599"
+Acura,Integra,GS-R,1992,https://i.imgur.com/sXaBZZ9.jpg,Sport Compact Coupe,II," $ 17,910 "," $ 38,042 "," $ 22,900 ","3,118",FF,1700,B17A1,Natural,I4,,160,7600,117,7000,5M,,21,26,23,13.2,,,,,172.9,67.5,50.0,"2,665"
+Honda,Civic,Si,1992,,Sport Compact Coupe,V," $ 13,473 "," $ 28,618 ",,,FF,1600,D16Z6 VTEC,Natural,I4,,125,6600,106,5200,5M; 4A,,29,36,32,,119,7.5,,,172.8,66.9,50.9,"2,491"
+Nissan,240SX (S13),,1992,,Sport Compact Coupe,I," $ 14,515 "," $ 30,831 ",,,,2400,KA24DE,Natural,I4,,155,5600,160,4400,,,,,,,,,,,,,,
+Ford,Mustang,SVT Cobra,1993,,Muscle Car,," $ 18,505 "," $ 38,164 ",,,,,,,,,235,4200,280,,,,,,,,,,,,,,,
+Honda,CR-X,del Sol Si,1993,,Sport Compact Coupe,III," $ 15,000 "," $ 30,935 ",,,FF,1600,D16Z6 VTEC,Natural,I4,,125,6600,106,5200,5M; 4A,,,,,,,,,,157.7,66.7,49.4,"2,535"
+Mazda,RX-7,R1,1993,,Sports Car,III," $ 32,500 "," $ 67,026 ",,,,-,13B-REW,Natural,Rotary,,255,6500,217,5000,5M; 4A,,,,,,,,,,168.7,69.3,48.4,"2,685"
+Toyota,MR2,Turbo,1993,,Sport Compact Coupe,II," $ 24,728 "," $ 50,998 ",,,RMR,2000,3S-GTE,Turbo,I4,,200,6000,200,3200,5M,,,,,,,6.1,14.7,,164.2,66.9,48.6,"2,888"
+Acura,NSX,,1994,https://i.imgur.com/hbUTq41.jpg,Sports Car,I," $ 72,500 "," $ 145,788 "," $ 101,500 ",,,,,,,,270,7100,210,5300,5M,,,,,,,,,,,,,
+Ford,Probe,GT,1994,,Sport Compact Coupe,II," $ 15,540 ",,,,FF,2497,KL-DE,Natural,V6,9.2,164,5600,156,4000,5M; 4A,,,,21,15.5,133,7.0,15.5,89.0,179.5,69.8,51.8,"2,815"
+Honda,Prelude,Si,1994,,Sport Compact Coupe,IV,,,,,FF,2259,H23A1 DOHC,Natural,I4,9.8,160,,156,,5M; 4A,,,,,,,,,,174.8,69.5,50.8,"2,840"
+Mitsubishi,Eclipse,GSX,1994,,Sport Compact Coupe,I,,,,,F4,2000,Sirius 4G63T DOHC,Turbo,I4,,188,,,,5M,,,,,,,,,,172.8,66.7,52.0,"3,095"
+Nissan,180SX,Type X,1994,,Sport Compact Coupe,II,,,,,,,,,,,202,,203,,,,,,,,,,,,,,,
+Mitsubishi,3000GT,,1995,,Sports Car,II,,,,,FF,,DOHC 24v,Natural,V6,,223,6000,204,4000,5M,,,,,,,,,,,,,"3,263"
+Mitsubishi,Eclipse,GS,1996,,Sport Compact Coupe,II,,,,,FF,2000,420A DOHC,Natural,I4,,140,,130,,5M; 4A,,,,,,,,,,172.2,68.7,50.2,"2,723"
+Acura,Integra,Type R,1998,https://i.imgur.com/Q1UT2et.jpg,Sport Compact Coupe,III," $ 23,500 ",," $ 64,800 ",,FF,1800,B18C5,Natural,I4,,195,7800,130,7500,5M,,,,,,,6.1,14.5,96.0,172.4,67.3,52.0,"2,595"
+Ford,Contour,SVT,1999,,Sport Compact Sedan,I,,,,"2,760",FF,2544,Duratec 25 SVT,Turbo,V6,10.0,200,,169,,5M,,,,,15.4,,,,,183.9,69.0,54.4,"3,038"
+Hyundai,Tiburon,RD2,1999,,Sport Compact Coupe,I,,,,"9,641",FF,2000,Beta 1CVT,Natural,I4,,140,6000,133,4800,5M; 4A,,,,,,131,8.3,,,171.1,68.1,51.3,"2,679"
+Infinity,G20,,1999,,Compact Sedan,II,,,,,FF,2000,SR20DE,,I4,,145,,,,,,,,,,,,,,177.5,66.7,55.1,"2,913"
+Mazda,MX-5 Miata,(NB),1999,,Sports Car,II,,,,,FR,1839,BP-4W,Natural,I4,,140,6500,119,5000,5M; 4A,,,,,,,,,,155.1,66.1,48.0,"2,348"
+Mercury,Cougar,,1999,,Sport Compact Coupe,VIII,,,,"88,288",FF,2544,Duratec 25,Natural,V6,,,,,,5M; 4A,,,,,,,,,,185.0,69.6,52.2,"2,892"
+Mitsubishi,Eclipse,GSX,1999,,Sport Compact Coupe,II,,,,,F4,2000,Sirius 4G63T DOHC,Turbo,I4,,210,6000,214,3000,5M,,,,,,,,,,172.4,68.7,50.5,"3,210"
+Toyota,MR2,Spyder,2000,,Sport Compact Coupe,III,,,,"7,233",RMR,1794,1ZZ-FED DOHC,Natural,I4,,138,6400,126,4400,5M,,,,,,,6.8,,,153.0,66.7,48.8,"2,195"
+Chevrolet,Cavalier,Z24,2001,,Sport Compact Coupe,III,,,,,FF,2392,LD9 DOHC,Natural,I4,9.7,150,5600,155,4400,5M; 4A,,23,33,27,,,,,,180.7,68.7,53.0,"2,900"
+Chevrolet,Corvette,Z06,2001,,Sports Car,,,,,,,,,,,,385,6000,385,4800,,,,,,,,,,,,,,
+Ford,Focus,ZX3,2001,,Compact Hatch,I," $ 14,850 ",,,,,2000,Zetec-E DOHC,Natural,I4,,130,5300,135,4500,5M; 4A,,22,31,25,13.2,108,8.7,,,168.1,66.9,56.3,"2,551"
+Honda,Prelude,,2001,,Sport Compact Coupe,V,,,,,FF,2157,H22A4 DOHC VTEC,Natural,I4,10.0,197,7000,156,5250,5M; 4A,,,,,,,,,,178.0,69.0,52.0,"2,954"
+Honda,S2000,,2001,,Sports Car,I," $ 32,300 ",,,,FR,2000,F20C,Natural,I4,,237,8300,155,7500,6M,,,,,,,,,,162.2,68.9,50.6,"2,809"
+Mazda,Protegé,,2002,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nissan,Sentra,SE-R,2002,,Sport Compact Sedan,V,,,,,FF,2500,QR25DE,Natural,,,165,,175,,,,,,,,,,,,,,,
+Acura,RSX,,2003,https://i.imgur.com/vf7j0yi.jpg,Sport Compact Coupe,IV," $ 19,975 ",,,"24,292",FF,2000,K20A3,Natural,I4,,160,6500,142,4000,6M; 5A,,24,31,27,,,,15.8,,172.6,67.9,54.5,"2,579"
+BMW,Z4,(E85),2003,,Sports Car,,,,,,,2000,N46,Natural,I4,,148,6200,148,3750,6M; 5A,,,,,,,,,,161.0,70.1,51.2,
+Dodge,Neon,SXT,2003,,Sport Compact Sedan,II," $ 15,340 ",,,,FF,2000,A588,Natural,I4,,132,5600,130,4600,5M; 4A,,25,32,28,12.5,,,,,174.4,67.4,56.0,"2,626"
+Ford,Focus,SVT,2003,,Sport Compact Hatch,I,,,,,,2000,Zetec-R,Natural,I4,,170,7000,145,5500,6M,,18,26,21,13.2,134,7.4,,,168.1,66.9,56.3,"2,769"
+Mitsubishi,Eclipse,GTS,2003,,Sport Compact Coupe,III,,,,,FF,3000,6G72 SOHC,Natural,V6,,210,,,,5M; 4A,,,,,,,,,,175.4,68.9,51.6,"3,053"
+Mitsubishi,Lancer,Evo VIII,2003,,Sport Compact Sedan,VII,,,,,F4,1997,4G63,Turbo,I4,,276,,295,,5M,,,,,14.0,,,,,176.8,69.7,57.1,"3,109"
+Hyundai,Elantra,GT,2004,,Sport Compact Sedan,III,,,,,FF,1975,G4GC,Natural,I4,10.3,138,6000,136,4500,5M; 4A,,,,,,,,,,177.6,67.7,56.1,"2,635"
+Hyundai,Tiburon,GT,2004,,Sports Car,II,,,,"20,125",FF,2700,Delta,Natural,V6,,172,6000,181,4000,5M; 4A,,,,,,137,8.2,,,173.0,69.3,52.4,"3,075"
+Acura,RSX,Type-S,2005,https://i.imgur.com/8Cc0CCI.jpg,Sport Compact Coupe,IV," $ 24,140 ",,,,FF,2000,K20Z1,Natural,I4,,210,7800,143,6200,5M,,,,,,145,5.7,14.6,95.0,172.6,67.9,55.1,"2,840"
+Chevrolet,Cobalt,,2005,,Sport Compact Coupe,I,,,,,FF,2198,L61,Natural,I4,10.0,145,5600,155,4000,5M; 4A,,,,,,,,,,180.5,67.9,55.5,"2,681"
+Dodge,Neon,SRT-4,2005,,Sport Compact Sedan,II," $ 20,700 ",,,,FF,2400,A853,Turbo,I4,,220,5100,245,2400,5M,,19,28,22,12.5,,,,,174.4,67.4,56.0,"2,900"
+Mazda,3,s,2005,,Sport Compact Sedan,I,,,,,FF,2300,MZR L,Natural,I4,,160,,150,,5M; 4A,,,,,,,,,,177.4,68.9,59.1,"2,954"
+Mazda,RX-8,,2005,,Sports Car,I,,,,,FR,1300,RENESIS,Natural,Rotary,,189,,,,,,,,,,,,,,174.2,69.7,52.8,"2,886"
+Nissan,350Z,,2005,,Sport Compact Coupe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pontiac,Solstice,,2005,,,,,,,,,,,,,,,,,,5M,,,,,,,,,,,,,
+Infinity,G35,,2006,,Sport Compact Coupe,III,,,,,FR,,VQ35DE Rev-UP,,,,298,,,,6M,,,,,,,,,,182.3,71.5,54.7,"3,373"
+Mitsubishi,Lancer,Evo IX,2006,,Sport Compact Sedan,VII,,,,,F4,1997,4G63,Turbo,I4,,287,,289,,5M; 5A,,,,,14.0,,4.3,13.0,,176.8,69.7,57.1,"3,285"
+Scion,tC,,2006,https://i.imgur.com/xC6SiMP.jpg,Sport Compact Coupe,I,,,,"79,125",FF,2362,2AZ-FE DOHC,Natural,I4,9.6,160,5700,162,4000,5M; 4A,,19,27,24,14.5,,7.4,15.6,89.9,174.0,69.1,55.7,"2,905"
+Mazda,3,Mazdaspeed,2007,,Sport Compact Hatch,I,,,,,FF,2300,MZR L3-VDT DOHC,Turbo,I4,,263,5500,280,3000,6M,,,,,,,5.6,,,176.6,69.1,51.7,"2,954"
+Chevrolet,Cobalt,SS,2008,,Sport Compact Coupe,I,,,,"5,000",FF,2384,LE5,Turbo,I4,10.4,171,6200,167,4800,5M; 4A,,,,,,,,,,180.5,67.9,55.5,"2,681"
+Ford,Focus,SES,2009,,Compact Coupe,II,,,,,,2000,Duratec,Natural,I4,,140,6000,136,4250,5M,,25,35,29,,119,8.9,,,175.0,67.8,58.6,"2,623"
+Mazda,MX-5 Miata,(NC2),2009,,Sports Car,III,,,,,FR,1999,MZR LF-VE DOHC,Natural,I4,,167,7000,140,5000,5M; 6A,,,,,,,,,,158.3,67.7,49.4,"2,542"
+Mitsubishi,Lancer,Evo X,2009,,Sport Compact Sedan,VIII,,,,,F4,1998,4B11T,Turbo,I4,,276,,300,,5M; 6A,,,,,,,,,,177.0,71.3,58.3,"3,527"
+Mitsubishi,Eclipse,GT,2009,,Sport Compact Coupe,IV,,,,,FF,3828,6G75 SOHC,Natural,V6,,265,5750,262,4500,6M; 5A,,,,,,,,,,180.4,72.2,53.5,"3,472"
+Nissan,GT-R,,2009,,Sports Car,VI,,,,"1,730",F4,3799,VR38DETT,Turbo,V6,,485,6400,434,5200,6DCT,,,,,,197,3.2,11.3,120.3,,,,"3,836"
+Fiat,500,Arbarth,2010,,Sport Compact Hatch,,,,,,FF,1400,Fire TurboJet,Turbo,I4,,160,5500,152,3000,5M; 5A,,,,,,,,,,139.6,64.1,58.6,"2,533"
+Honda,Fit,Sport,2010,,Compact Hatch,II,,,,,FF,,,,,,,,,,,,,,,,,,,,,,,
+Hyundai,Genesis Coupe,,2010,,Sports Car,I,,,,,,,,,,,,,,,,,,,,,,,,,182.3,73.4,54.3,"3,417"
+Nissan,370Z,,2010,,Sport Compact Coupe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Honda,CR-Z,,2011,,Sport Compact Coupe,I,,,,"11,330",FF,1497,LEA i-VTEC,Natural,I4,,112,6000,107,4800,6M; CVT,,31,37,,,,8.3,17.6,,160.6,68.5,54.9,"2,725"
+Mazda,3,Mazdaspeed,2011,,Sport Compact Hatch,II," $ 25,840 ",,,,FF,2300,MZR L3-VDT DOHC,Turbo,I4,,263,5500,280,3000,6M,,18,25,22,,,5.2,13.9,102.0,177.6,69.7,57.5,
+Scion,tC,,2011,https://i.imgur.com/rFXITdV.jpg,Sport Compact Coupe,II,,,,"22,433",FF,2494,2AR-FE DOHC,Natural,I4,10.4,180,6000,173,4100,6M; 6A,,23,31,27,14.5,,6.5,15.1,92.4,174.0,70.7,55.7,"3,090"
+Hyundai,Veloster,,2012,,Sport Compact Hatch,I," $ 20,060 ",,,,,1600,Gamma MPi,Natural,I4,,138,,123,4850,6M; 6A,,,,,,,,,,166.1,70.5,55.1,"2,425"
+Ford,Focus,ST,2013,,Sport Compact Hatch,III,,,,,,2000,GDI,Turbo,I4,,252,5500,270,2500,6M,,23,32,26,,155,5.9,,,171.6,71.8,58.4,"3,223"
+Hyundai,Genesis Coupe,R-Spec,2013,,Sports Car,I,,,,,,,,,,,,,,,,,,,,,,,,,182.3,73.4,54.5,"3,613"
+Chevrolet,Corvette,Z06,2015,,Sports Car,VII,,,,,,6200,LT4,Super,V8,,650,6400,650,3600,7M; 8A,,15,22,18,18.5,,,,,177.9,77.4,48.6,"3,524"
+Honda,Fit,,2015,,Compact Hatch,III,,,,,FF,1500,L15B1,Natural,I4,11.5,130,6600,114,4600,6M; CVT,,,,,,,,,,,,,
+BMW,M2,,2016,,Sports Car,I," $ 52,695 ",,,,,3000,N55B30T0,Turbo,I6,,355,6000,343,5250,6M; 7DCT,,,,,,,,,,175.9,73.0,56.0,"3,296"
+Chevrolet,Sonic,RS,2017,,Sport Compact Sedan,II,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mazda,MX-5 Miata,(ND) RF,2017,,Sports Car,IV,,,,,FR,1998,Skyactiv-G,Natural,I4,,158,6000,148,4600,,,25,38,,,,,,,154.1,68.1,48.6,"2,332"
+Mitsubishi,Mirage,,2017,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ford,Focus,RS,2018,,Sport Compact Hatch,III,,,,,,2300,GDI,Turbo,I4,,350,6000,350,3200,6M,,19,25,22,,165,4.6,,,171.6,71.8,58.4,"3,459"
+Volkswagen,Golf,R,2018,,Sport Compact Hatch,VII," $ 40,680 ",,,,F4,2000,,Turbo,I4,,292,5400,280,1800,7DSG,"3.19, 2.75, 1.90, 1.04, 0.79, 0.86, 0.66",22,29,25,14.5,,,,,168.4,70.8,56.5,"3,373"
+Hyundai,Veloster,N,2019,,Sport Compact Hatch,II," $ 27,830 ",,,,FF,2000,Theta T-GDI,Turbo,I4,,271,6600,260,4700,6M,"3.08, 1.93, 1.70, 1.28, 1.03, 0.85",22,28,25,13.2,155,5.6,,,166.9,71.3,55.1,"3,036"
+Infinity,Q60,,2022,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,GR86,,2022,,Sport Compact Coupe,II," $ 27,700 ",," $ 27,700 ",,FR,2387,FA24D,Natural,H4,12.5,232,7000,184,3700,6M; 6A,,,,,,,,,,167.9,69.9,51.6,"2,881"
+Acura,Integra,,2023,https://i.imgur.com/YXwtO4W.jpg,Sport Compact Sedan,V," $ 41,289 ",," $ 41,289 ",,,1500,L15CA,Turbo,I4,,200,6000,190,5000,6M; CVT,,,,,,,,,,185.8,72.0,55.5,
+Kia,EV6,GT,2023,,Sport Compact Crossover,I,,,,,D4,,,Electric,,,577,9000,546,4200,CVT,,,,,,162,3.4,,,184.8,74.4,60.8,"4,608"
+Nissan,Versa,,2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nissan,Z,,2023,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,Corolla,GR,2023,,Sport Compact Hatch,XII," $ 35,900 ",," $ 35,900 ",,F4,1618,G16E-GTS,Turbo,I3,,300,6500,273,5550,6M,,,,,,,,,,173.6,72.8,57.2,"3,292"
+Honda,Civic,Type R,2023,,Sport Compact Hatch,XI," $ 43,990 ",," $ 43,990 ",,FF,2000,,Turbo,I4,,315,6500,310,2600,6M,,22,28,24,,,5.3,13.9,104.2,180.9,74.4,55.4,"3,165"
+Porsche,928,GTS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Porsche,928,S,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Porsche,944,S2,,,,,,,,,,,,,,,,,,,5M,,,,,,,,,,,,,
+Saab,900,S,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Saturn,Ion,Redline,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Saturn,Sky,Red Line,,,Sports Car,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Subaru,BRZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Subaru,GLF,,,,Compact Coupe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Subaru,Impreza,WRX STi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Subaru,SVX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,Celica,GT-S,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,Celica,Supra,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,Corolla,FX-16 (AE82),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota,Supra,,,,,,,,,,,,,,,,,,,,6M,,,,,,,,,,,,,
+Toyota,Yaris,,,,Compact Hatch,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Triumph,Stag,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Triumph,TR6,,,,Sport Compact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Volkswagen,Jetta,GLI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Volkswagen,Rabbit,GTI,,,Compact Hatch,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
