@@ -75,10 +75,9 @@
 	</script>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-    $('div.autopart4').append('<div>HI</div>');
-});
-  </script>
+		var imgstarthtml = '<div>HI</div>';
+		document.getElementsByClassName('autopart4').insertAdjacentHTML('afterend', imgstarthtml);
+	</script>
 </head>
 <body>
 
