@@ -72,10 +72,18 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
+		$( ".autoentry" ).css({"background":"red"});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$( ".autoentry" ).css({"background":"red"});
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
 		$('#CSVTable').CSVToTable('autolist.csv', { theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
+		$( ".autoentry" ).css({"background":"red"});
 	});
 </script>
 
