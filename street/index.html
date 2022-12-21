@@ -73,15 +73,15 @@
 			$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
 		});
 	</script>
-
-	<script type="text/javascript">
-		var imgstarthtml = '<div>HI</div>';
-		document.getElementsByClassName('autopart4').insertAdjacentHTML('afterend', imgstarthtml);
-	</script>
+	
 </head>
 <body>
 
 <div id="CSVTable"></div>
+
+<script type="text/javascript">
+	$(".autopart4").html("Yep");
+</script>
 
 </body>
 </html>
