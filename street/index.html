@@ -56,13 +56,8 @@
 			$.get('autolist.csv', function(data) {
 				$('#CSVSource').html('<pre>' + data + '</pre>');
 			});
-			$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });;
-		});
-	</script>
-
-	<script>
-		$(document).ready(function () {
-			$('div.autopart4').appendText('Howdy, ', 'top');
+			$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
+			$('div.autopart4').appendText('Howdy, ', 'top');;
 		});
 	</script>
 </head>
