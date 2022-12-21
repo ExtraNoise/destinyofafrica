@@ -76,12 +76,7 @@
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
 		$('#CSVTable').CSVToTable('autolist.csv', { theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
-	});
-</script>
-
-<script type="text/javascript">
-	$(document).ready(function () {
-		$( "#CSVTable" ).children( ".autopart4" ).css({"background":"red"});
+		$( "#CSVTable" ).css({"background":"red"});
 		console.log($('.autopart4'));
 	});
 </script>
