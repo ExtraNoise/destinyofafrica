@@ -65,28 +65,22 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.csvToTable.js"></script>
 	
-	
-	
 </head>
 <body>
 
 <div id="CSVTable"></div>
-
-
 
 <script type="text/javascript">
 	$(function() {
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
-		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
+		$('#CSVTable').CSVToTable('autolist.csv', { theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
 	});
 </script>
 
 <script type="text/javascript">
-	$(document).ready(function () {
-		$( ".autopart4" ).wrap( "<div class='new'></div>" );
-	});
+	$( ".autopart4" ).wrap( "<div class='new'></div>" );
 </script>
 
 </body>
