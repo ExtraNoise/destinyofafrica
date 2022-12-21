@@ -72,12 +72,17 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
-		$.get('autolist.csv', function(data) {
-			$('#CSVSource').html('<pre>' + data + '</pre>');
+		$( "#CSVTable" ).load( "js/jquery.csvToTable.js", function() {
+			$.get('autolist.csv', function(data) {
+				$('#CSVSource').html('<pre>' + data + '</pre>');
+			});
+			$('#CSVTable').CSVToTable('autolist.csv', { theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
 		});
-		$('#CSVTable').CSVToTable('autolist.csv', { theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
-		$( "#CSVTable" ).css({"background":"red"});
+		
 		console.log($('.autopart4'));
+
+		$( "#CSVTable" ).children('.autopart4').css({"background":"red"});
+		
 	});
 </script>
 
