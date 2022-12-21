@@ -16,7 +16,7 @@
 		.autoentry {
 			display:inline-block;
 			background:white;
-			width:400px;
+			width:512px;
 			margin:10px;
 			padding:10px;
 			border-radius:2px;
@@ -32,15 +32,13 @@
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
-		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart' + i, startLine: 0 });;
+		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart' + headers, startLine: 0 });;
 	});
 	</script>
 </head>
 <body>
 
-<div id="CSVTable">
-
-</div>
+<div id="CSVTable"></div>
 
 </body>
 </html>
