@@ -12,7 +12,7 @@
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
-		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', startLine: 0 });;
+		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', tableClass: 'autolist', trClass: 'autoentry', startLine: 1 });;
 	});
 	</script>
 </head>
