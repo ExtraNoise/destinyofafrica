@@ -71,7 +71,7 @@
 <div id="CSVTable"></div>
 
 <script type="text/javascript">
-	$(function() {
+	$(document).ready(function () {
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
