@@ -25,12 +25,12 @@
 
 <body>
 	<div id="CSVTable"></div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="//jquerycsvtotable.googlecode.com/files/jquery.csvToTable.js"></script>
 
 	<script>
 	$(function() {
-		$('#CSVTable').CSVToTable('/autolist.csv');
+		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', startLine: 1, headers: ['Make', 'Model', 'Trim', 'Year'] } ).bind("loadComplete",function() { $('#CSVTable').find('TABLE').tablesorter(); });;
 	});
 	</script>
 </body>
