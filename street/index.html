@@ -4,9 +4,14 @@
 	<meta charset="utf-8" />
 	<title>Automobile List</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 	<style type="text/css">
 		body {
 			background:#eee;
+			font-family: 'PT Sans', Verdana, sans-serif;
 		}
 
 		.listhead {
@@ -24,15 +29,11 @@
 		}
 
 		.autopart4 {
+			width:512px;
+			height:256px;
 			position:absolute;
 			top:0;
 			left:0;
-		}
-		.autopart4::before {
-			content: "<img src='";
-		}
-		.autopart4::after {
-			content: "'/>";
 		}
 	</style>
 
@@ -46,6 +47,12 @@
 		});
 		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });;
 	});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$(".autopart4").prepend("this is before");
+		});
 	</script>
 </head>
 <body>
