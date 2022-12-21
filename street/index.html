@@ -2,7 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>jQuery CSVToTable</title>
+	<title>Automobile List</title>
+
+	<style type="text/css">
+		body {
+			background:#eee;
+		}
+		
+		.listhead {
+			display:none;
+		}
+
+		.autoentry {
+			display:inline-block;
+			background:white;
+			width:400px;
+			margin:10px;
+			padding:10px;
+			border-radius:2px;
+		}
+	</style>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.csvToTable.js"></script>
@@ -12,7 +31,7 @@
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
-		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', tableClass: 'autolist', trClass: 'autoentry', startLine: 1 });;
+		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', startLine: 0 });;
 	});
 	</script>
 </head>
