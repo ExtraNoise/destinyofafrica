@@ -20,6 +20,19 @@
 			margin:10px;
 			padding:10px;
 			border-radius:2px;
+			position:relative;
+		}
+
+		.autopart4 {
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.autopart4::before {
+			content: "<img src='";
+		}
+		.autopart4::after {
+			content: "'/>";
 		}
 	</style>
 
@@ -28,7 +41,6 @@
 	
 	<script>
 	$(function() {
-		var i = 1;
 		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
