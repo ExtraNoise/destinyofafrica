@@ -28,12 +28,11 @@
 	
 	<script>
 	$(function() {
-		for (var i = 1; i < 11; i++) {
-			$.get('autolist.csv', function(data) {
-				$('#CSVSource').html('<pre>' + data + '</pre>');
-			});
-			$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: '' + i, startLine: 0 });;
-		};;
+		var i = 1; i++;
+		$.get('autolist.csv', function(data) {
+			$('#CSVSource').html('<pre>' + data + '</pre>');
+		});
+		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: '' + i, startLine: 0 });;
 	});
 	</script>
 </head>
