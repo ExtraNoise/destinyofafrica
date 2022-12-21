@@ -137,7 +137,7 @@
 							tableHTML += '<div class="' + options.trClass + ' ' + oddOrEven + '">';
 							$.each(items, function(itemCount, item) {
 								//tableHTML += '<td class="' + options.tdClass + '">' + item + '</td>';
-								tableHTML += '<div class="' + options.tdClass + '">' + item + '</div>';
+								tableHTML += '<div class="' + options.tdClass + ' ' + items.length + '">' + item + '</div>';
 							});
 							//tableHTML += '</tr>';
 							tableHTML += '</div>';
