@@ -95,7 +95,8 @@
 			(options.loadingImage) ? loading = '<div style="text-align: center"><img alt="' + options.loadingText + '" src="' + options.loadingImage + '" /><br>' + options.loadingText + '</div>' : loading = options.loadingText;
 			obj.html(loading);
 			$.get(csvFile, function(data) {
-				var tableHTML = '<table class="' + options.tableClass + '">';
+				//var tableHTML = '<table class="' + options.tableClass + '">';
+				var tableHTML = '<div class="' + options.tableClass + '">';
 				var lines = data.replace('\r','').split('\n');
 				var printedLines = 0;
 				var headerCount = 0;
@@ -104,20 +105,26 @@
 					if ((lineCount == 0) && (typeof(options.headers) != 'undefined')) {
 						headers = options.headers;
 						headerCount = headers.length;
-						tableHTML += '<thead class="' + options.theadClass + '"><tr class="' + options.trClass + '">';
+						//tableHTML += '<thead class="' + options.theadClass + '"><tr class="' + options.trClass + '">';
+						tableHTML += '<div class="' + options.theadClass + '"><div class="' + options.trClass + '">';
 						$.each(headers, function(headerCount, header) {
-							tableHTML += '<th class="' + options.thClass + '">' + header + '</th>';
+							//tableHTML += '<th class="' + options.thClass + '">' + header + '</th>';
+							tableHTML += '<div class="' + options.thClass + '">' + header + '</div>';
 						});
-						tableHTML += '</tr></thead><tbody class="' + options.tbodyClass + '">';
+						//tableHTML += '</tr></thead><tbody class="' + options.tbodyClass + '">';
+						tableHTML += '</div></div><div class="' + options.tbodyClass + '">';
 					}
 					if ((lineCount == options.startLine) && (typeof(options.headers) == 'undefined')) {
 						headers = line.splitCSV(options.separator);
 						headerCount = headers.length;
-						tableHTML += '<thead class="' + options.theadClass + '"><tr class="' + options.trClass + '">';
+						//tableHTML += '<thead class="' + options.theadClass + '"><tr class="' + options.trClass + '">';
+						tableHTML += '<div class="' + options.theadClass + '"><div class="' + options.trClass + '">';
 						$.each(headers, function(headerCount, header) {
-							tableHTML += '<th class="' + options.thClass + '">' + header + '</th>';
+							//tableHTML += '<th class="' + options.thClass + '">' + header + '</th>';
+							tableHTML += '<div class="' + options.thClass + '">' + header + '</div>';
 						});
-						tableHTML += '</tr></thead><tbody class="' + options.tbodyClass + '">';
+						//tableHTML += '</tr></thead><tbody class="' + options.tbodyClass + '">';
+						tableHTML += '</div></div><div class="' + options.tbodyClass + '">';
 					} else if (lineCount >= options.startLine) {
 						var items = line.splitCSV(options.separator);
 						if (items.length > 1) {
@@ -126,15 +133,19 @@
 								error += 'error on line ' + lineCount + ': Item count (' + items.length + ') does not match header count (' + headerCount + ') \n';
 							}
 							(printedLines % 2) ? oddOrEven = 'odd' : oddOrEven = 'even';
-							tableHTML += '<tr class="' + options.trClass + ' ' + oddOrEven + '">';
+							//tableHTML += '<tr class="' + options.trClass + ' ' + oddOrEven + '">';
+							tableHTML += '<div class="' + options.trClass + ' ' + oddOrEven + '">';
 							$.each(items, function(itemCount, item) {
-								tableHTML += '<td class="' + options.tdClass + '">' + item + '</td>';
+								//tableHTML += '<td class="' + options.tdClass + '">' + item + '</td>';
+								tableHTML += '<div class="' + options.tdClass + '">' + item + '</div>';
 							});
-							tableHTML += '</tr>';
+							//tableHTML += '</tr>';
+							tableHTML += '</div>';
 						}
 					}
 				});
-				tableHTML += '</tbody></table>';
+				//tableHTML += '</tbody></table>';
+				tableHTML += '</div></div>';
 				if (error) {
 					obj.html(error);
 				} else {
