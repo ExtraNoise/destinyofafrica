@@ -80,7 +80,10 @@
 <div id="CSVTable"></div>
 
 <script type="text/javascript">
-	$(".autopart4").html("Yep");
+	$(document).ready(function () {
+		var html = '<img id="page_image_image" class="small-image-preview v-middle" src="pokeball.png" title="pokeball.png" alt="pokeball.png" data-ui-id="adminhtml-grid-edit-tab-templatesetup-0-fieldset-element-file-image" width="22" height="22">';
+		$(".autopart4").prepend(html);
+	});
 </script>
 
 </body>
