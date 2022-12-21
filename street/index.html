@@ -9,31 +9,19 @@
 	
 	<script>
 	$(function() {
-		$.get('test.csv', function(data) {
+		$.get('autolist.csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
-		$('#CSVTable').CSVToTable('test.csv', { loadingImage: 'images/loading.gif', startLine: 0 });
-		$.get('test.tsv', function(data) {
-			$('#TSVSource').html('<pre>' + data + '</pre>');
-		});;
+		$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', startLine: 0 });;
 	});
 	</script>
 </head>
 <body>
 
-This is a test of the CSVToTable plugin.
-<br><br>
-Original CSV (comma separated values) source of <a href="test.csv">test.csv</a>:<br>
-<div id="CSVSource" class="source">
-</div>
-
-<br><br>
 CSV To Table:<br>
 <div id="CSVTable">
 
 </div>
-
-
 
 </body>
 </html>
