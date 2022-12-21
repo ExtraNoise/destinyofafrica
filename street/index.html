@@ -20,24 +20,22 @@
 
 		.autoentry {
 			display:inline-flex;
+			flex-wrap: wrap;
 			background:white;
 			width:512px;
 			margin:10px;
 			padding:10px;
-			border-radius:2px;
-			position:relative;
+			border-radius:3px;
 		}
 
 		.autopart0,.autopart1,.autopart2,.autopart3 {
-			display:inline-block;
 			margin:6px;
 			padding:6px;
 			background:#f3f3f3;
-			border-radius:2px;
+			border-radius:3px;
 		}
 
 		.autopart1,.autopart2 {
-			flex-grow:2;
 			font-weight:bold;
 		}
 
@@ -47,12 +45,12 @@
 
 		.autopart4 {
 			order:-2;
-			display:block;
-			width:512px;
-			height:256px;
-			position:absolute;
-			top:10px;
-			center:0px;
+		}
+		.autopart4 img {
+			width: 512px;
+			height: 256px;
+			border-radius: 3px 3px;
+			object-fit: cover;
 		}
 
 		.autopart5 {
@@ -60,7 +58,7 @@
 			margin:6px;
 			padding:6px;
 			background:#f3f3f3;
-			border-radius:2px;
+			border-radius:3px;
 		}
 	</style>
 
@@ -73,9 +71,16 @@
 				$('#CSVSource').html('<pre>' + data + '</pre>');
 			});
 			$('#CSVTable').CSVToTable('autolist.csv', { loadingImage: 'images/loading.gif', theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
-			$('.autopart4').appendHTML('<div>hello</div>', 'top');;
 		});
 	</script>
+
+	<script type="text/javascript">
+
+
+$('.autopart4').appendHTML('<span style="color: red;">Howdy</span>, ', 'top');
+
+
+  </script>
 </head>
 <body>
 
