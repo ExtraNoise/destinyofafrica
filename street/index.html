@@ -64,7 +64,7 @@
 		.autoengine,.autospeed {
 			background:#f3f3f3;
 			border-radius:3px;
-			width:50%;
+			width:45%;
 			margin:6px;
 			padding:6px;
 		}
@@ -91,7 +91,7 @@
 		for (var i = 0; i < data.length; i++) {
 			var newEntry = document.createElement("div");
 			newEntry.className = 'autoentry';
-			newEntry.innerHTML = '<div class="autoimg"><img src="' + data[i].image + '"/></div><div class="autoname">' + data[i].year + ' ' + data[i].make + ' <strong>' + data[i].model + ' ' + data[i].trim + '</strong></div><div class="autotype">Generation ' + data[i].gen + ' ' + data[i].model + '&nbsp;&nbsp;&nbsp;&ndash;&nbsp;&nbsp;&nbsp;' + data[i].type + '&nbsp;&nbsp;&nbsp;&ndash;&nbsp;&nbsp;&nbsp;' + data[i].layout + ' Layout</div><div class="autoengine"><p><strong>Engine:</strong><br/>' + data[i].eng_cc + 'cc ' + data[i].eng_name + ' ' + data[i].eng_pwr + '</p><p><strong>Horses:</strong> ' + data[i].eng_hp + ' hp @ ' + data[i].eng_hp_rpm + ' rpm<br/><strong>Torque:</strong> ' + data[i].eng_tq + ' lb-ft @ ' + data[i].eng_tq_rpm + ' rpm</p></div><div class="autospeed"><p><strong>Top Speed:</strong>' + data[i].speed_top + ' mph<br/><strong>0 to 60:</strong> ' + data[i].speed_to60 + ' seconds<br/><strong>Quarter Mile:</strong> ' + data[i].speed_qtrmi_time + ' seconds @ ' + data[i].speed_qtrmi_speed + ' mph</p></div>';
+			newEntry.innerHTML = '<div class="autoimg"><img src="' + data[i].image + '"/></div><div class="autoname">' + data[i].year + ' ' + data[i].make + ' <strong>' + data[i].model + ' ' + data[i].trim + '</strong></div><div class="autotype">Generation ' + data[i].gen + ' ' + data[i].model + '&nbsp;&nbsp;&nbsp;&ndash;&nbsp;&nbsp;&nbsp;' + data[i].type + '&nbsp;&nbsp;&nbsp;&ndash;&nbsp;&nbsp;&nbsp;' + data[i].layout + ' Layout</div><div class="autoengine"><p><strong>Engine:</strong><br/>' + data[i].eng_cc + 'cc ' + data[i].eng_name + ' ' + data[i].eng_pwr + '</p><p><strong>Horses:</strong> ' + data[i].eng_hp + ' hp @ ' + data[i].eng_hp_rpm + ' rpm<br/><strong>Torque:</strong> ' + data[i].eng_tq + ' lb-ft @ ' + data[i].eng_tq_rpm + ' rpm</p></div><div class="autospeed"><p><strong>Top Speed:</strong> ' + data[i].speed_top + ' mph<br/><strong>0 to 60:</strong> ' + data[i].speed_to60 + ' seconds</p><p><strong>Quarter Mile:</strong><br/>' + data[i].speed_qtrmi_time + ' seconds @ ' + data[i].speed_qtrmi_speed + ' mph</p></div>';
 			mainContainer.appendChild(newEntry);
 		}
 	}
