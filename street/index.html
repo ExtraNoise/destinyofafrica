@@ -61,29 +61,31 @@
 			border-radius:3px;
 		}
 	</style>
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.csvToTable.js"></script>
 	
 </head>
 <body>
 
-<div id="CSVTable"></div>
+<div id="autolist"></div>
 
-<script type="text/javascript">
-	$(document).ready(function () {
-		$( "#CSVTable" ).load( "js/jquery.csvToTable.js", function() {
-			$.get('autolist.csv', function(data) {
-				$('#CSVSource').html('<pre>' + data + '</pre>');
-			});
-			$('#CSVTable').CSVToTable('autolist.csv', { theadClass: 'listhead', tableClass: 'autolist', trClass: 'autoentry', tdClass: 'autopart', startLine: 0 });
+<script>
+	fetch('autolist.json')
+		.then(function (response) {
+			return response.json();
+		})
+		.then(function (data) {
+			appendData(data);
+		})
+		.catch(function (err) {
+			console.log('error: ' + err);
 		});
-		
-		console.log($('.autopart4'));
-
-		$( "#CSVTable" ).children('.autopart4').css({"background":"red"});
-		
-	});
+	function appendData(data) {
+		var mainContainer = document.getElementById("autolist");
+		for (var i = 0; i < data.length; i++) {
+			var div = document.createElement("div");
+			div.innerHTML = 'Auto: ' + data[i].make + ' ' + data[i].model;
+			mainContainer.appendChild(div);
+		}
+	}
 </script>
 
 </body>
