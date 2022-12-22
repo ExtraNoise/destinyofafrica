@@ -81,9 +81,10 @@
 	function appendData(data) {
 		var mainContainer = document.getElementById("autolist");
 		for (var i = 0; i < data.length; i++) {
-			var div = document.createElement("div");
-			div.innerHTML = 'Auto: ' + data[i].make + ' ' + data[i].model;
-			mainContainer.appendChild(div);
+			var newEntry = document.createElement("div");
+			newEntry.className = 'autoentry';
+			newEntry.innerHTML = 'Auto: ' + data[i].make + ' ' + data[i].model;
+			mainContainer.appendChild(newEntry);
 		}
 	}
 </script>
