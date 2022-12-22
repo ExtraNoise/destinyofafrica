@@ -22,7 +22,7 @@
 			display:inline-flex;
 			flex-wrap: wrap;
 			background:white;
-			font-size:11px;
+			font-size:13px;
 			width:512px;
 			margin:10px;
 			padding:10px;
@@ -37,10 +37,10 @@
 			border-radius:3px;
 		}
 
-		.autopart4 {
+		.autoimg {
 			order:-2;
 		}
-		.autopart4 img {
+		.autoimg img {
 			width: 512px;
 			height: 256px;
 			border-radius: 3px 3px;
@@ -69,7 +69,7 @@
 		for (var i = 0; i < data.length; i++) {
 			var newEntry = document.createElement("div");
 			newEntry.className = 'autoentry';
-			newEntry.innerHTML = '<div class="autoname">' + data[i].year + '<strong>' + data[i].make + ' ' + data[i].model + ' ' + data[i].trim + '</strong></div>';
+			newEntry.innerHTML = '<div class="autoimg"><img src="' + data[i].image + '"/></div><div class="autoname">' + data[i].year + ' ' + data[i].make + ' <strong>' + data[i].model + ' ' + data[i].trim + '</strong></div>';
 			mainContainer.appendChild(newEntry);
 		}
 	}
