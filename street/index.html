@@ -22,25 +22,19 @@
 			display:inline-flex;
 			flex-wrap: wrap;
 			background:white;
+			font-size:11px;
 			width:512px;
 			margin:10px;
 			padding:10px;
 			border-radius:3px;
 		}
 
-		.autopart0,.autopart1,.autopart2,.autopart3 {
+		.autoname {
+			width:100%;
 			margin:6px;
 			padding:6px;
 			background:#f3f3f3;
 			border-radius:3px;
-		}
-
-		.autopart1,.autopart2 {
-			font-weight:bold;
-		}
-
-		.autopart3 {
-			order:-1;
 		}
 
 		.autopart4 {
@@ -51,14 +45,6 @@
 			height: 256px;
 			border-radius: 3px 3px;
 			object-fit: cover;
-		}
-
-		.autopart5 {
-			display:block;
-			margin:6px;
-			padding:6px;
-			background:#f3f3f3;
-			border-radius:3px;
 		}
 	</style>
 	
@@ -77,13 +63,13 @@
 		})
 		.catch(function (err) {
 			console.log('error: ' + err);
-		});
+	});
 	function appendData(data) {
 		var mainContainer = document.getElementById("autolist");
 		for (var i = 0; i < data.length; i++) {
 			var newEntry = document.createElement("div");
 			newEntry.className = 'autoentry';
-			newEntry.innerHTML = 'Auto: ' + data[i].make + ' ' + data[i].model;
+			newEntry.innerHTML = '<div class="autoname">' + data[i].year + '<strong>' + data[i].make + ' ' + data[i].model + ' ' + data[i].trim + '</strong></div>';
 			mainContainer.appendChild(newEntry);
 		}
 	}
